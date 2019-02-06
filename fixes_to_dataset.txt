@@ -1,0 +1,8 @@
+Just by seeing:
+	1. Some cells had values shifted by one column. This was easy to see because there were empty cells in the beginning part of the row.
+		1.1. Countries which had this issue included UK, Italy, India, Ecuador, Chile (one also missing country code), Australia.
+
+		
+csvlint.io
+	1. Lots of empty rows found, e.g. 479, 536, 591, 692, etc. 
+		1.1. Easy fix in Excel by selecting all data then "Data" > "Filter". Now select the first column and filter only blank items. Delete all the items here which are completely empty.
