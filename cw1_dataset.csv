@@ -771,7 +771,6 @@ CHL,Chile,GUAYACAN,CHL0001047,12,-33.6027,-70.3597,Hydro,,,,,ENERGIA COYANCO S.A
 CHL,Chile,HBS,CHL0003012,2.2,-37.2864,-72.351,Biomass,,,,,HBS ENERGIA S.A.,Energía Abierta,http://energiaabierta.cl/electricidad/,Energía Abierta,2016,,,,,30.527
 CHL,Chile,HIDROBONITO MC1,CHL0001048,9,-40.9178,-72.4036,Hydro,,,,,HIDROBONITO S.A.,Energía Abierta,http://energiaabierta.cl/electricidad/,Energía Abierta,2016,,,,,32.432
 CHL,Chile,HIDROBONITO MC2,CHL0001049,3,-40.9178,-72.4036,Hydro,,,,,HIDROBONITO S.A.,Energía Abierta,http://energiaabierta.cl/electricidad/,Energía Abierta,2016,,,,,10.811
-,,,,,,,,,,,,,,,,,,,,,
 CHL,Chile,HUASCO,CHL0000054,57.7,-28.4707,#NAME?,Oil,,,,,EMPRESA NACIONAL DE ELECTRICIDAD S.A.,Energía Abierta,http://energiaabierta.cl/electricidad/,Energía Abierta,2016,,,,,90.16
 CHL,Chile,INACAL,CHL0000008,6.6,-23.7819,-70.3202,Oil,,,,,EQUIPOS DE GENERACION S.A.,Energía Abierta,http://energiaabierta.cl/electricidad/,Energía Abierta,2016,,,,,10.313
 CHL,Chile,ISLA,CHL0001051,70,-35.8104,-70.8357,Hydro,,,,,ENDESA,Energía Abierta,http://energiaabierta.cl/electricidad/,Energía Abierta,2016,,,,,252.251
@@ -842,7 +841,6 @@ CHL,Chile,TOMAVAL 2,CHL0000124,1.6,-32.8489,-71.2267,Gas,,,,,TOMAVAL GENERACION,
 CHL,Chile,TOTORAL,CHL0002019,46,-31.3256,-71.611,Wind,,,,,NORVIND S.A.,Energía Abierta,http://energiaabierta.cl/electricidad/,Energía Abierta,2016,,,,,74.015
 CHL,Chile,TRAPEN,CHL0000090,81,-41.5177,-73.0768,Oil,,,,,ENLASA,Energía Abierta,http://energiaabierta.cl/electricidad/,Energía Abierta,2016,,,,,126.568
 CHL,Chile,TRONGOL-CURANILAHUE,CHL0000072,2.8,-37.4914,-73.3208,Oil,,,,,SAGESA,Energía Abierta,http://energiaabierta.cl/electricidad/,Energía Abierta,2016,,,,,4.375
-,,,,,,,,,,,,,,,,,,,,,
 CHL,Chile,UCUQUER,CHL0002020,7.2,-34.0448,-71.6108,Wind,,,,,ENERGIAS UCUQUER S.A.,Energía Abierta,http://energiaabierta.cl/electricidad/,Energía Abierta,2016,,,,,11.585
 CHL,Chile,UCUQUER 2,CHL0002021,10.75,-34.0427,-71.6223,Wind,,,,,ENERGIAS UCUQUER S.A.,Energía Abierta,http://energiaabierta.cl/electricidad/,Energía Abierta,2016,,,,,17.297
 CHL,Chile,VALLE DE LOS VIENTOS,CHL0002022,90,-22.4803,-68.8236,Wind,,,,,PARQUE EOLICO VALLE DE LOS VIENTOS S.A.,Energía Abierta,http://energiaabierta.cl/electricidad/,Energía Abierta,2016,,,,,144.812
@@ -919,7 +917,6 @@ DOM,Dominican Republic,AES Andres,WRI1001993,319,18.4074,-69.6343,Gas,,,,,AES An
 DOM,Dominican Republic,Barahona Carbon,WRI1023732,45.6,18.2213,-71.0867,Coal,,,,,EGE-Haina,National Interconnected System of the Dominican Republic,http://www.oc.org.do/INFORMES/Administrativos/InformeAnual.aspx,WRI,,,,,,369.455
 DOM,Dominican Republic,Haina TG,WRI1001998,184.9,18.424,-70.0209,Oil,,,,,EGE-Haina,National Interconnected System of the Dominican Republic,http://www.oc.org.do/INFORMES/Administrativos/InformeAnual.aspx,WRI,,,,,,2117.347
 DOM,Dominican Republic,Itabo 2,WRI1001978,260,18.4058,-70.0271,Coal,,,,,EGE-Itabo,National Interconnected System of the Dominican Republic,http://www.oc.org.do/INFORMES/Administrativos/InformeAnual.aspx,WRI,,,,,,2106.545
-,,,,,,,,,,,,,,,,,,,,,
 DOM,Dominican Republic,Los Cocos 2,WRI1023729,52,17.8726,-71.2892,Wind,,,,,EGE-Haina,National Interconnected System of the Dominican Republic,http://www.oc.org.do/INFORMES/Administrativos/InformeAnual.aspx,WRI,,,,,,608
 DOM,Dominican Republic,Metaldom,WRI1001980,42,18.4361,-69.947,Oil,,,,,EGE-Haina,National Interconnected System of the Dominican Republic,http://www.oc.org.do/INFORMES/Administrativos/InformeAnual.aspx,WRI,,,,,,480.955
 DOM,Dominican Republic,Monte Plata,WRI1001999,30,18.8198,-69.7901,Solar,,,,,,CDM,https://cdm.unfccc.int/Projects/DB/RINA1354546725.32/view,WRI,,,,,,238
@@ -998,7 +995,6 @@ EST,Estonia,Eesti Elektrijaam,WRI1022393,1369,59.2748,27.9046,Oil,,,,,,ENTSOE,ht
 EST,Estonia,IRU Elektrijaam,WRI1022396,173,59.4514,24.9246,Gas,,,,,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show,GEODB,,,,,,28.22
 EST,Estonia,Kiisa AREJ 2,WRI1022394,250,59.2439,24.7064,Gas,,,,,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show,WRI,,,,,,40.78
 EST,Estonia,Mali,WRI1022404,12,58.446,23.7385,Wind,,,,2014,,Estonian Wind Energy Association,http://www.tuuleenergia.ee/en/windpower-101/statistics-of-estonia/installed-capacity/,Estonian Wind Energy Association,,,,,,26.081
-,,,,,,,,,,,,,,,,,,,,,
 EST,Estonia,Pakri,WRI1022397,18.4,59.3806,24.0568,Wind,,,,2005,Nelja Energia OU,Estonian Wind Energy Association,http://www.tuuleenergia.ee/en/windpower-101/statistics-of-estonia/installed-capacity/,GEODB,,,,,,39.991
 EST,Estonia,Paldiski,WRI1022403,45,59.3717,24.0808,Wind,,,,2012,Eesti Energia,Estonian Wind Energy Association,http://www.tuuleenergia.ee/en/windpower-101/statistics-of-estonia/installed-capacity/,Estonian Wind Energy Association,,,,,,97.805
 EST,Estonia,Tamba,WRI1022409,6,58.4924,23.6855,Wind,,,,2014,Tuuleenergia OÜ,Estonian Wind Energy Association,http://www.tuuleenergia.ee/en/windpower-101/statistics-of-estonia/installed-capacity/,Estonian Wind Energy Association,,,,,,13.041
@@ -1066,7 +1062,6 @@ GEO,Georgia,Inguri (Enguri) Dam Hydroelectric Power Station Georgia,GEODB0003667
 GEO,Georgia,Khrami I Hydroelectric Power Plant Georgia,GEODB0041908,112,41.5489,44.1235,Hydro,,,,200,,GEODB,http://globalenergyobservatory.org,GEODB,2017,,,,,361.633
 GEO,Georgia,Khrami II Hydroelectric Power Plant Georgia,GEODB0041922,110,41.5461,44.1277,Hydro,,,,200,,GEODB,http://globalenergyobservatory.org,GEODB,2017,,,,,355.175
 GEO,Georgia,Lajanuri Hydroelectric Power Plant Georgia,GEODB0041903,113,42.589,42.8519,Hydro,,,,200,,GEODB,http://globalenergyobservatory.org,GEODB,2017,,,,,364.862
-,,,,,,,,,,,,,,,,,,,,,
 GEO,Georgia,Ortachala Hydroelectric Power Plant Georgia,GEODB0041915,18,41.6831,44.8266,Hydro,,,,200,,GEODB,http://globalenergyobservatory.org,GEODB,2017,,,,,58.12
 GEO,Georgia,Rioni Hydroelectric Power Plant Georgia,GEODB0041906,48,42.2006,42.7258,Hydro,,,,200,,GEODB,http://globalenergyobservatory.org,GEODB,2017,,,,,154.986
 GEO,Georgia,Satskhenisi Hydroelectric Power Plant Georgia,GEODB0041921,14,41.7048,44.9328,Hydro,,,,200,,GEODB,http://globalenergyobservatory.org,GEODB,2017,,,,,45.204
@@ -1112,7 +1107,6 @@ DEU,Germany,Wendefurth,WRI1006135,79.7,51.7422,10.9188,Hydro,,,,,Vattenfall Euro
 DEU,Germany,Werdau Solar Power Plant,WRI1030204,1.7,50.7144,12.3825,Solar,,,,,,Enerparc AG,http://www.enerparc.de,Industry About,,,,,,15.745
 DEU,Germany,Werkskraftwerk Sappi Alfeld 1,WRI1006136,16.8,51.9848,9.8228,Biomass,,,,1988,Sappi Alfeld GmbH,Open Power System Data,http://data.open-power-system-data.org/,Open Power System Data,,,,,,439.918
 DEU,Germany,Werkskraftwerk Sappi Alfeld 2,WRI1006137,20,51.9851,9.8225,Gas,,,,1947,Sappi Alfeld GmbH,Open Power System Data,http://data.open-power-system-data.org/,Open Power System Data,,,,,,50.978
-,,,,,,,,,,,,,,,,,,,,,
 DEU,Germany,Werneuchen - Enerparc Solar Power Plant,WRI1030069,18.8,52.634,13.7603,Solar,,,,200,,Enerparc AG,http://www.enerparc.de,Industry About,,,,,,174.123
 DEU,Germany,Werneuchen - S&Z Solar Power Plant,WRI1030067,2.2,52.6423,13.7523,Solar,,,,,,S & Z Energiesysteme GmbH,http://www.suz-energiesysteme.de,Industry About,,,,,,20.376
 DEU,Germany,Weserkraftwerk Bremen,WRI1006140,9.9,53.0611,8.8649,Hydro,,,,2012,swb Erzeugung GmbH & Co. KG,Open Power System Data,http://data.open-power-system-data.org/,Open Power System Data,,,,,,25.23
@@ -1181,13 +1175,11 @@ GRC,Greece,Kastraki,WRI1061076,320,38.7413,21.3654,Hydro,,,,1969,,Global Reservo
 GRC,Greece,Kavasila Solar Power Plant,WRI1026603,4.9,37.8842,21.256,Solar,,,,,Enel Green Power Hellas SA,Enel Green Power,http://environmentalreport2012.enel.com/files/grecia_en.pdf,WRI,,,,,,171.094
 GRC,Greece,Korinthos Power Plant,WRI1061102,437,37.9208,23.0665,Gas,,,,2012,Korinthos Power,Hellenic Association of Independent Power Producers,http://haipp.gr/en/power-plants,WRI,,,,,,568.898
 GRC,Greece,Kotomini,WRI1061100,485,41.0646,25.4899,Gas,,,,2002,Public Power Company of Greece,Public Power Corporation of Greece,http://www.dei.gr/Default.aspx?id=146&nt=123&lang=2,WRI,,,,,,631.385
-,,,,,,,,,,,,,,,,,,,,,
 GRC,Greece,Kourtesi 2 Solar Power Plant,WRI1026605,4.9,37.9598,21.3475,Solar,,,,,Enel Green Power Hellas SA,Enel Green Power,https://www.enelgreenpower.com/en/media/press/d201205-enel-green-power-starts-operating-two-new-plants-in-greece.html,WRI,,,,,,171.094
 GRC,Greece,Koutsopodi Solar Power Plant,WRI1026606,2,37.6502,22.6556,Solar,,,,,Elliniki Technodomiki Anemos SA,Biosar,http://en.biosar.gr/article.asp?catid=31187&subid=2&pubid=15361429,WRI,,,,,,69.834
 GRC,Greece,Kremasta,WRI1061073,437,38.8904,21.4996,Hydro,,,,1965,,Global Reservoir and Dam Database,http://sedac.ciesin.columbia.edu/data/collection/grand-v30,WRI,,,,,,575.053
 GRC,Greece,LOGGARAKIA,WRI1026630,18,37.479,23.1277,Wind,,,,2014,TERNA,TERNA,http://www.terna-energy.com/activities/?catid=67e8558e-78c1-44cc-9d53-56994d9e6f7e&countryId=5a53c3a7-cff0-49a4-ba90-5538b3418e40,WRI,,,,,,308.918
 GRC,Greece,Ladhon,WRI1061086,70,37.7654,21.9829,Hydro,,,,1955,,Global Reservoir and Dam Database,http://sedac.ciesin.columbia.edu/data/collection/grand-v37,WRI,,,,,,92.114
-,,,,,,,,,,,,,,,,,,,,,
 GRC,Greece,Limnochori Solar Power Plant,WRI1026607,4.8,38.1311,21.4468,Solar,,,,,Enel Green Power Hellas SA,Enel Green Power,http://environmentalreport2012.enel.com/files/grecia_en.pdf,WRI,,,,,,167.602
 GRC,Greece,Linoperamata,WRI1061071,193,35.34,25.0523,Oil,,,,,Public Power Company of Greece,Public Power Corporation of Greece,https://www.dei.gr/Default.aspx?t=MapStation.aspx&id=170&nt=124&lang=2,GEODB,,,,,,2135.713
 GRC,Greece,Louros Dam,WRI1061090,10,39.2514,20.8657,Hydro,,,,1954,,Large Dam Database in Greece,http://users.itia.ntua.gr/nikos/dams/list%20of%20dams/r_Aliakmonas/aliakmonas%20dams.htm,WRI,,,,,,13.159
@@ -1267,7 +1259,6 @@ GUY,Guyana,Versailles Power Station,WRI1022996,22,6.7891,-58.1893,Oil,,,,201,Guy
 GUY,Guyana,Vreed en Hoop,WRI1022998,26,6.809,-58.179,Oil,,,,201,Guyana Power & Light,Guyana Power and Light,http://www.gplinc.net/sites/default/files/Uploaded%20Files/D&E%20Programme%202013%20-%202017%20-%20F.pdf,WRI,,,,,,
 HND,Honduras,Aura Solar 2,WRI1029374,61,13.2273,-87.2096,Solar,,,,2015,Guass Energia,Guass Energia,http://www.aurasolar.com.mx/aura-solar-II.html,WRI,,,,,,0
 HND,Honduras,Azulosa,WRI1029344,4,15.2834,-87.8882,Biomass,,,,,Empresa Nacional De Energia Electrica,Empresa Nacional De Energia Electrica,http://www.enee.hn/index.php/centrales-hidroelectricas/85-descripcion-ch,WRI,,,,,,41.84
-,,,,,,,,,,,,,,,,,,,,,
 HND,Honduras,Cerra de Hula,WRI1029371,126,13.9321,-87.2324,Wind,,,,,,CDM,https://cdm.unfccc.int/Projects/projsearch.html,WRI,,,,,,398
 HND,Honduras,Lufussa II,WRI1029351,80,13.4043,-87.3205,Oil,,,,,Empresa Nacional De Energia Electrica,Empresa Nacional De Energia Electrica,http://www.enee.hn/index.php/centrales-hidroelectricas/85-descripcion-ch,WRI,,,,,,453.868
 HND,Honduras,Lufussa III,WRI1029352,231,13.4047,-87.3269,Oil,,,,,Empresa Nacional De Energia Electrica,Empresa Nacional De Energia Electrica,http://www.enee.hn/index.php/centrales-hidroelectricas/85-descripcion-ch,WRI,,,,,,1310.543
@@ -1354,7 +1345,6 @@ IND,India,BINANI CEMENT PLANT,WRI1019885,69.6,24.8263,73.0901,Coal,,,,,Binani In
 IND,India,BINWA,IND0000060,6,32.1121,76.6537,Hydro,,,,1984,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,,,,,9.515
 IND,India,BIRSINGHPUR,IND0000061,20,23.3256,81.0333,Hydro,,,,1991,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,,,,,31.718
 IND,India,BOKARO A ''EXP'',IND0000063,500,23.6783,86.0888,Coal,Oil,,,2016,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,,,0.2805,,6528.451
-,,,,,,,,,,,,,,,,,,,,,
 IND,India,BONGAIGAON TPP,IND0000066,250,26.5145,90.5287,Coal,Oil,,,2015,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,,,106.5792,,3264.226
 IND,India,BP Brahmanvel Wind Farm,WRI1026079,40,21.2083,74.1543,Wind,,,,,,CDM,https://cdm.unfccc.int/filestorage/T/0/C/T0CJ85FSL1WN9VEXID67ZOBMQRGAPH/Revised%20PDD%20-%20Clean.pdf?t=UE58b2pkZGN1fDC4di78ksdJWNuCM4aKL4xu,WRI,,,,,,407.496
 IND,India,BRAMHAPURAM DG,IND0000067,63.96,9.9975,76.3744,Oil,,,,1997,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,27.9729,8.1158,12.8899,,
@@ -1435,18 +1425,6 @@ IND,India,HZL Gadag Wind Farm,WRI1026795,34.4,15.3654,75.5639,Wind,,,,,Hindustan
 IND,India,HZL Nandurbar Maharashtra,WRI1026080,25.5,21.3027,74.3091,Wind,,,,,,CDM,https://cdm.unfccc.int/Projects/DB/DNV-CUK1351776938.73/view,WRI,,,,,,259.779
 IND,India,HZL Palladum Wind Farm,WRI1026656,21,10.8674,77.4588,Wind,,,,,HZL,CDM,https://cdm.unfccc.int/Projects/DB/DNV-CUK1352807242.64/view,WRI,,,,,,213.936
 IND,India,JOJBERA,IND0000160,427.5,22.7554,86.2491,Coal,Oil,,,2000,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,2102,2692.7,2662.5,,
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
 IND,India,KAHALGAON,IND0000169,2340,25.2349,87.2635,Coal,Oil,,,2003,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,13427.37,14471,14192,,
 IND,India,KAIGA,IND0000170,880,14.865,74.4385,Nuclear,,,,2004,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,5937.97,5866.94,6996,,
 IND,India,KAKATIYA TPP,IND0000171,1100,18.3835,79.8265,Coal,Oil,,,2012,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,2942.81,4106.29,3408.69,,
@@ -1521,7 +1499,6 @@ IND,India,Khirsara - Welspun Solar Power Plant,WRI1026163,15,23.3618,70.0536,Sol
 IND,India,Khirwa Solar Power Plant,WRI1026164,1,27.301,72.3236,Solar,,,,,Conflux Infratech Private Limited,Infratech e M/Pdf,http://www.rrecl.com/PDF/Details%20of%Rajasthan.pdf,Industry About,,,,,,2
 IND,India,Khori Wind Farm,WRI1026668,20.8,21.167,74.3272,Wind,,,,,REI Agro Limited,CDM,https://cdm.unfccc.int/filestorage/L/V/Q/LVQ9ANSCJX8164E5H7PWYIB3O0RZ2U/Revised%20PDD%20Version%2006%20dated%205th%20June%202012%20-%20Clean%20mode.pdf?t=akx8b2pxZm9ufDC6M3RsDeQKejKPRFouqWsR,WRI,,,,,,212
 IND,India,Kohinoor Wind Farm,WRI1026342,24,26.6797,71.026,Wind,,,,,Kohinoor Planet Construction Pvt. Ltd,CDM,https://cdm.unfccc.int/Projects/DB/BVQI1302691944.71/view,WRI,,,,,,244
-,,,,,,,,,,,,,,,,,,,,,
 IND,India,Kosa Wind Farm,WRI1026086,33,23.3183,68.6988,Wind,,,,,,CDM,https://cdm.unfccc.int/filestorage/w/m/64TXH0Y1V9ZCISBKO3F758PEQNUJDR.pdf/PDD__V-2_5_19_10_2012.pdf?t=akh8b2pkZTFtfDAP0pu4sjZSao0P-GV-Qzqn,WRI,,,,,,336
 IND,India,Kottamangalam Wind Farm,WRI1026067,56.25,10.6558,77.2471,Wind,,,,,,CDM,https://cdm.unfccc.int/filestorage/a/1/0JPNG5S4A821KD6IUHWBOEYRVFTL3X.pdf/ALWE%20PDD_Ver%206%20_06.03.2013_%20Clean%20.pdf?t=dlV8b2picjMyfDAQ_TbHluMZz9jMHYOK8XbU,WRI,,,,,,573.042
 IND,India,Kottathara Village Wind Farm,WRI1026775,3,11.0951,76.6709,Wind,,,,,,CDM,https://cdm.unfccc.int/Projects/DB/BVQI1315830379.2/view,WRI,,,,,,30.562
@@ -1605,7 +1582,6 @@ IND,India,NARIMANGLAM,IND0000291,45,9.9533,76.9792,Hydro,,,,1961,,Central Electr
 IND,India,NASIK,IND0000292,630,19.9817,73.8896,Coal,Oil,,,1980,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,3821.74,3730.102,3870.0695,,
 IND,India,NASIK SINNAR,WRI1019977,270,19.8658,74.0835,Coal,,,,,Rattanindia Power ltd,Rattanindia Power ltd,http://www.rattanindia.com/,WRI,,,,,,3525.364
 IND,India,NASIK TPP  PH 1,IND0000293,270,19.9817,73.8896,Coal,Oil,,,2014,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,0,0,0,,
-,,,,,,,,,,,,,,,,,,,,,
 IND,India,NEPANAGAR MILL,WRI1020008,12.27,21.4504,76.4014,Coal,,,,,National And paper,National And paper,http://www.epw.in/journal/1962/42/chair-uncategorised/national-newsprint-and-paper-mills-ltd-nepanagar-mp.html,WRI,,,,,,160.208
 IND,India,NEYVELI FST EXT,IND0000297,420,11.5887,79.4611,Coal,Oil,,,2002,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,3013.554,3107.282,3000.061,,
 IND,India,NEYVELI ST I,IND0000298,600,11.5893,79.4704,Coal,Oil,,,1966,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,3594.971,3193.101,2776.947,,
@@ -1674,7 +1650,6 @@ IND,India,RAMPUR,IND0000366,412.02,31.4,77.5927,Hydro,,,,2013,,Central Electrici
 IND,India,RANGANADI,IND0000367,405,27.3426,93.8168,Hydro,,,,2002,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,976.0353,1103.9326,1273.84875,,
 IND,India,RANGIT-III,IND0000368,60,27.2949,88.2921,Hydro,,,,2000,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,352.7275,326.0416,343.54365,,
 IND,India,RANJANI MILL,WRI1019979,12.5,18.5354,76.245,Biomass,,,,,Natural Alliend indust,Natural Alliend indust,http://naturalsugar.in/,WRI,,,,,,297.879
-,,,,,,,,,,,,,,,,,,,,,
 IND,India,RAS CEMENT PLANT,WRI1019898,36,26.263,74.1878,Coal,,,,,Shree Cement ltd,Shree Cement ltd,http://www.shreecement.in/,WRI,,,,,,470.049
 IND,India,RATIJA TPP,IND0000370,50,22.3404,82.493,Coal,Oil,,,2013,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,184.214,215.21,218.93,,
 IND,India,RATNAGIRI GAS,IND0000371,1967.08,17.5587,73.167,Gas,,,,2003,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,1409.186,0.045355,1150.497,,
@@ -1827,7 +1802,6 @@ IND,India,UKAI_Coal,IND0000475,1350,21.2093,73.5574,Coal,Oil,,,1991,,Central Ele
 IND,India,UKAI_Hydro,IND0000476,300,21.2478,73.5866,Hydro,,,,1974,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,808.8355,687.17685,489.05245,,
 IND,India,UMIAM I II &IV,IND0000477,114,25.6593,91.9003,Hydro,,,,1980,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,252.9489,251.94395,297.5846,,
 IND,India,UMTRU,IND0000478,11.2,26.0069,91.8114,Hydro,,,,1957,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,,,,,17.76208909
-,,,,,,,,,,,,,,,,,,,,,
 IND,India,UNO SUGEN,IND0000480,382.5,21.3411,72.9895,Gas,,,,2012,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,,,834.058,,6214.364039
 IND,India,UPL Dharapuram Wind Farm,WRI1026759,1.7,10.838,77.5123,Wind,,,,,UPL,CDM,https://cdm.unfccc.int/Projects/DB/RWTUV1351718801.6/view,WRI,,,,,,17.31859123
 IND,India,UPPAR INDRAVATI,IND0000481,600,19.4269,82.8594,Hydro,,,,1999,,Central Electricity Authority,http://www.cea.nic.in/,WRI,2016,2504.48465,2682.94785,1751.6378,,
@@ -1866,7 +1840,6 @@ IND,India,VIZAG TPP,IND0000506,1040,17.5635,83.1382,Coal,Oil,,,2015,,Central Ele
 IND,India,Vaayu Ashti Wind Farm,WRI1026665,50.4,19.108,74.9885,Wind,,,,,Vaayu Renew,CDM,https://cdm.unfccc.int/Projects/DB/DNV-CUK1350385874.53/view,WRI,,,,,,513.445
 IND,India,Vastan Solar Power Plant,WRI1026219,5,21.4239,73.1273,Solar,,,,,Gujarat Industries Power Company Limited (GIPCL),Gujarat Industries Power Company Limited (GIPCL),http://www.gipcl.com,Industry About,,,,,,9.703
 IND,India,Yelesandra Solar Power Plant,WRI1026222,3,12.8932,78.1654,Solar,,,,,Karnataka Power Corporation Limited,Karnataka Power Corporation Limited,http://karnatakapower.com,Industry About,,,,,,5.822
-,,,,,,,,,,,,,,,,,,,,,
 IND,India,ZAWAR MINES,WRI1019901,80,24.35,73.7477,Coal,,,,,Hindustan Zinc ltd,Hindustan Zinc ltd,http://www.hzlindia.com/,WRI,,,,,,1044.552
 IND,India,iEnergy Theni Wind Farm,WRI1026761,16.5,9.9344,77.4768,Wind,,,,,iEnergy Wind Farms,CDM,https://cdm.unfccc.int/Projects/DB/RWTUV1345031355.85/view,WRI,,,,,,168.092
 IRN,Iran,Abadan C.C.,WRI1008113,820,30.402,48.358,Gas,,,,2002,,TAVANIR,http://www2.tavanir.org.ir/info/stat87/sanatlhtml/Links/j14%20-1/main.htm,GEODB,,,,,,4225.838
@@ -1929,7 +1902,6 @@ IRN,Iran,Qeshm Pasargard Power Plant,WRI1029955,540,26.9279,55.9629,Gas,,,,,TAVA
 IRN,Iran,Qom,WRI1008173,714,34.579,50.755,Gas,,,,,,TAVANIR,http://www2.tavanir.org.ir/info/stat87/sanatlhtml/Links/j14%20-1/main.htm,GEODB,,,,,,3680
 IRN,Iran,Razi Petroshimi,WRI1008174,252,30.4357,49.1089,Gas,,,,1993,,TAVANIR,http://www2.tavanir.org.ir/info/stat87/sanatlhtml/Links/j14%20-1/main.htm,GEODB,,,,,,1299
 IRN,Iran,Rey,WRI1008175,128,35.5207,51.4078,Gas,,,,,,TAVANIR,http://www2.tavanir.org.ir/info/stat87/sanatlhtml/Links/j14%20-1/main.htm,GEODB,,,,,,660
-,,,,,,,,,,,,,,,,,,,,,
 IRN,Iran,Sabalan,WRI1008177,696,37.2928,48.3658,Gas,,,,,,TAVANIR,http://www2.tavanir.org.ir/info/stat87/sanatlhtml/Links/j14%20-1/main.htm,CARMA,,,,,,3587
 IRN,Iran,Sahand,WRI1008178,650,37.424,46.013,Oil,,,,,,TAVANIR,http://www2.tavanir.org.ir/info/stat87/sanatlhtml/Links/j14%20-1/main.htm,GEODB,,,,,,3419
 IRN,Iran,Sahid Montazere Ghaem,WRI1008179,626,35.73,51,Oil,,,,,,TAVANIR,http://www2.tavanir.org.ir/info/stat87/sanatlhtml/Links/j14%20-1/main.htm,GEODB,,,,,,3293
@@ -2070,7 +2042,6 @@ ITA,Italy,CASTROCUCCO,WRI1021307,83,39.9888,15.8085,Hydro,,,,,,ENTSOE,https://tr
 ITA,Italy,CCGT APRILIA,WRI1002862,787,41.5616,12.6337,Gas,,,,,,TERNA,http://www.terna.it/en-gb/sistemaelettrico/transparencyreport/generation/installedgenerationcapacity.aspx,GEODB,,,,790.96,,1910.58
 ITA,Italy,CEDEGOLO,WRI1002863,130,46.0767,10.3496,Hydro,,,,,,TERNA,http://www.terna.it/en-gb/sistemaelettrico/transparencyreport/generation/installedgenerationcapacity.aspx,CARMA,,,,282.4,,585.264
 ITA,Italy,CELANO,WRI1002864,180,42.0458,13.5475,Gas,,,,1998,Grupo Industriale Maccaferri,Termica Celano,http://www.termicacelano.it/index.php/attivita,CARMA,,,,26,,436.981
-,,,,,,,,,,,,,,,,,,,,,
 ITA,Italy,CENTRALE DI TEVEROLA,WRI1002866,400,41.0092,14.2281,Gas,,,,2007,,Repower,https://web.archive.org/web/20110703082905/http://www.repower.com/en/it/production/power-plants/combined-cycle-gas-power-plant-in-teverola/,GEODB,,,,2500,,971.07
 ITA,Italy,CENTRALE DI TURANO LODIGIANO - BERTONICO (LO),WRI1002867,800,45.2268,9.6377,Gas,,,,2011,Ansalado Energia,Ansaldo Energia,http://www.ansaldoenergia.it/easyUp/file/anno2012_numero2(1).pdf,GEODB,,,,1337.5,,1942.14
 ITA,Italy,ENTRACQUE_CHRO,WRI1002882,1064,44.2256,7.3842,Hydro,,,,,,TERNA,http://www.terna.it/en-gb/sistemaelettrico/transparencyreport/generation/installedgenerationcapacity.aspx,GEODB,,,,508.6,,4790.161519
@@ -2095,7 +2066,6 @@ ITA,Italy,ISOLA SERAFINI,WRI1021316,76,45.0911,9.9052,Hydro,,,,,,ENTSOE,https://
 ITA,Italy,ISOLATO SPLUGA,WRI1002895,117.6,46.4394,9.3595,Hydro,,,,,,TERNA,http://www.terna.it/en-gb/sistemaelettrico/transparencyreport/generation/installedgenerationcapacity.aspx,CARMA,,,,205,,529.4389047
 ITA,Italy,Iglesias Solar Power Plant,WRI1026408,2,39.295,8.5833,Solar,,,,,Solar Asset Management,GP Joule,http://www.gp-joule.eu/activities/projects/,Industry About,,,,,,103.3666211
 ITA,Italy,JESI,WRI1002896,140,43.5537,13.285,Gas,,,,2001,Edison,Edison,http://www.edison.it/media/EMAS-GETE1-jesi2005.pdf,GEODB,,,,0,,339.8744901
-,,,,,,,,,,,,,,,,,,,,,
 ITA,Italy,LAGONI ROSSI,WRI1021666,20,43.1666,10.7847,Geothermal,,,,1981,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show,WRI,,,,,,138.0630105
 ITA,Italy,LAMARMORA,WRI1002898,116.7,45.5248,10.2273,Oil,,,,,,A2A,http://www.a2a.eu/en/plants_networks/cogeneration/lamarmora.html,CARMA,,,,409,,187.2101329
 ITA,Italy,LANA,WRI1002901,120,46.6124,11.1559,Hydro,,,,,,TERNA,http://www.terna.it/en-gb/sistemaelettrico/transparencyreport/generation/installedgenerationcapacity.aspx,CARMA,,,,167,,540.2437803
@@ -2106,7 +2076,6 @@ ITA,Italy,LEINI,WRI1002904,379.5,45.163,7.7505,Gas,,,,2007,,Ansaldo Energia,http
 ITA,Italy,LEVANTE,WRI1002905,752.5,45.4458,12.2552,Gas,,,,1992,,TERNA,http://www.terna.it/en-gb/sistemaelettrico/transparencyreport/generation/installedgenerationcapacity.aspx,GEODB,,,,2165,,1826.825384
 ITA,Italy,LIVORNO MARZOCCO,WRI1002906,310,43.5673,10.31,Oil,,,,1965,ENEL,ENEL,https://www.futur-e.enel.it/cs/Satellite?blobcol=urldata&blobheader=application%2Fpdf&blobheadername1=Content-Disposition&blobheadername2=MDT-Type&blobheadervalue1=inline%3B+filename%3Dlivorno-eng.pdf&blobheadervalue2=abinary%3B+charset%3DUTF-8&blobkey=id&blobtable=MungoBlobs&blobwhere=1445864757397&ssbinary=true,GEODB,,,,457,,497.301981
 ITA,Italy,La Brava Solar Power Plant,WRI1026409,13.4,45.9516,13.4031,Solar,,,,,,GP Joule,http://www.gp-joule.eu/activities/projects/,Industry About,,,,,,692.5563614
-,,,,,,,,,,,,,,,,,,,,,
 ITA,Italy,Lady Lucrecia Solar Power Plant,WRI1026410,1,40.1989,18.2162,Solar,,,,,9REN,Solaer,https://www.google.com/maps/d/embed?mid=1bXiXRcLRnBCUfpkHM2J5EVryhG4&ll=31.06035315253383%2C35.02284616406246&z=8,Industry About,,,,,,51.68331055
 ITA,Italy,Lapedona Solar Power Plant,WRI1026411,1,43.1225,13.768,Solar,,,,,Solaer,En Value,http://www.envalue.de/de/neues/index.php,Industry About,,,,,,51.68331055
 ITA,Italy,Lucera Solar Power Plant,WRI1026412,1,41.471,15.4122,Solar,,,,,Envalue GmbH,X-elio,http://www.x-elio.com,Industry About,,,,,,51.68331055
@@ -2155,7 +2124,6 @@ ITA,Italy,RONCOVALGRANDE,WRI1002936,1000,46.0702,8.7339,Hydro,,,,,,TERNA,http://
 ITA,Italy,ROSONE,WRI1002938,135,45.4837,7.3693,Hydro,,,,,,TERNA,http://www.terna.it/en-gb/sistemaelettrico/transparencyreport/generation/installedgenerationcapacity.aspx,WRI,,,,451,,607.7742529
 ITA,Italy,ROSSANO TE,WRI1002939,1200,39.6218,16.6084,Oil,,,,,,ENEL,https://www.futur-e.enel.it/cs/Satellite?blobcol=urldata&blobheader=application%2Fpdf&blobheadername1=Content-Disposition&blobheadername2=MDT-Type&blobheadervalue1=inline%3B+filename%3Drossano-eng.pdf&blobheadervalue2=abinary%3B+charset%3DUTF-8&blobkey=id&blobtable=MungoBlobs&blobwhere=1445864757481&ssbinary=true,GEODB,,,,0,,1925.039927
 ITA,Italy,Rovigo Solar Power Plant,WRI1026430,15,45.0374,11.5705,Solar,,,,,,Astronergy,http://www.astronergy.com/projects_plants.php,Industry About,,,,,,775.2496582
-,,,,,,,,,,,,,,,,,,,,,
 ITA,Italy,S.GIACOMO,WRI1002944,490,42.785,13.5111,Hydro,,,,,,TERNA,http://www.terna.it/en-gb/sistemaelettrico/transparencyreport/generation/installedgenerationcapacity.aspx,WRI,,,,424,,2205.995436
 ITA,Italy,S.MASSENZA 1 (Molveno),WRI1002945,377,46.0677,10.9826,Hydro,,,,,,TERNA,http://www.terna.it/en-gb/sistemaelettrico/transparencyreport/generation/installedgenerationcapacity.aspx,WRI,,,,583.21,,1697.265877
 ITA,Italy,SAN FILIPPO DEL MELA,WRI1002947,866,38.2049,15.2818,Oil,,,,,Edipower,Edipower,https://web.archive.org/web/20150316075708/http://www.edipower.it/centrale_di_sanfilippo.htm,GEODB,,,,2181.1,,1389.237147
@@ -2814,7 +2782,6 @@ PRK,North Korea,Chongjin Chemical Fiber,WRI1019836,6,41.7956,129.7758,Coal,,,,,,
 PRK,North Korea,December 12th Power plant,WRI1019832,100,38.8893,125.5596,Coal,,,,,,The People's Korea,https://web.archive.org/web/20090824204833/http://www1.korea-np.co.jp/pk/112th_issue/99091601.htm,WRI,,,,,,86.388
 PRK,North Korea,Haeju Cement,WRI1019826,200,38.029,125.6628,Coal,,,,,,The People's Korea,https://web.archive.org/web/20090824204833/http://www1.korea-np.co.jp/pk/112th_issue/99091601.htm,WRI,,,,,,172.776
 PRK,North Korea,Hamhung,WRI1019822,500,39.8531,127.5789,Coal,,,,,,The People's Korea,https://web.archive.org/web/20090824204833/http://www1.korea-np.co.jp/pk/112th_issue/99091601.htm,WRI,,,,,,431.941
-,,,,,,,,,,,,,,,,,,,,,
 PRK,North Korea,Hongnam Fertilizer,WRI1019834,18,39.8402,127.6341,Coal,,,,,,The People's Korea,https://web.archive.org/web/20090824204833/http://www1.korea-np.co.jp/pk/112th_issue/99091601.htm,WRI,,,,,,15.55
 PRK,North Korea,Hongnam Fertilizer,WRI1019834,18,39.8402,127.6341,Coal,,,,,,The People's Korea,https://web.archive.org/web/20090824204833/http://www1.korea-np.co.jp/pk/112th_issue/99091601.htm,WRI,,,,,,15.55
 PRK,North Korea,Huichon,WRI1019846,300,39.662,125.8124,Hydro,,,,,,The People's Korea,https://web.archive.org/web/20090824204833/http://www1.korea-np.co.jp/pk/112th_issue/99091601.htm,WRI,,,,,,1024.967
@@ -2997,7 +2964,6 @@ NOR,Norway,Kvinen,WRI1003303,90,58.9281,7.0838,Hydro,,,,,,ENTSOE,https://transpa
 NOR,Norway,Kvitfossen,WRI1003304,8,68.3268,14.6523,Hydro,,,,,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show?name=&defaultValue=true&viewType=TABLE&areaType=BZN&atch=false&dateTime.dateTime=01.01.2016+00:00|UTC|YEAR&area.values=CTY|10YNO-0--------C!BZN|10YNO-1--------2&productionType.values=B01&productionType.values=B02&productionType.values=B03&productionType.values=B04&productionType.values=B05&productionType.values=B06&productionType.values=B07&productionType.values=B08&productionType.values=B09&productionType.values=B10&productionType.values=B11&productionType.values=B12&productionType.values=B13&productionType.values=B14&productionType.values=B20&productionType.values=B15&productionType.values=B16&productionType.values=B17&productionType.values=B18&productionType.values=B19&DataTables_Table_0_length=268,WRI,,,,,,35.87
 NOR,Norway,Kvittingen,WRI1003306,56,60.4647,5.9085,Hydro,,,,,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show?name=&defaultValue=true&viewType=TABLE&areaType=BZN&atch=false&dateTime.dateTime=01.01.2016+00:00|UTC|YEAR&area.values=CTY|10YNO-0--------C!BZN|10YNO-1--------2&productionType.values=B01&productionType.values=B02&productionType.values=B03&productionType.values=B04&productionType.values=B05&productionType.values=B06&productionType.values=B07&productionType.values=B08&productionType.values=B09&productionType.values=B10&productionType.values=B11&productionType.values=B12&productionType.values=B13&productionType.values=B14&productionType.values=B20&productionType.values=B15&productionType.values=B16&productionType.values=B17&productionType.values=B18&productionType.values=B19&DataTables_Table_0_length=88,WRI,,,,,,251.087
 NOR,Norway,Lakshola,WRI1003308,34,67.4482,15.7505,Hydro,,,,,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show?name=&defaultValue=true&viewType=TABLE&areaType=BZN&atch=false&dateTime.dateTime=01.01.2016+00:00|UTC|YEAR&area.values=CTY|10YNO-0--------C!BZN|10YNO-1--------2&productionType.values=B01&productionType.values=B02&productionType.values=B03&productionType.values=B04&productionType.values=B05&productionType.values=B06&productionType.values=B07&productionType.values=B08&productionType.values=B09&productionType.values=B10&productionType.values=B11&productionType.values=B12&productionType.values=B13&productionType.values=B14&productionType.values=B20&productionType.values=B15&productionType.values=B16&productionType.values=B17&productionType.values=B18&productionType.values=B19&DataTables_Table_0_length=229,WRI,,,,,,152.445
-,,,,,,,,,,,,,,,,,,,,,
 NOR,Norway,Lang Sima,WRI1003309,580,60.4986,7.1447,Hydro,,,,,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show?name=&defaultValue=true&viewType=TABLE&areaType=BZN&atch=false&dateTime.dateTime=01.01.2016+00:00|UTC|YEAR&area.values=CTY|10YNO-0--------C!BZN|10YNO-1--------2&productionType.values=B01&productionType.values=B02&productionType.values=B03&productionType.values=B04&productionType.values=B05&productionType.values=B06&productionType.values=B07&productionType.values=B08&productionType.values=B09&productionType.values=B10&productionType.values=B11&productionType.values=B12&productionType.values=B13&productionType.values=B14&productionType.values=B20&productionType.values=B15&productionType.values=B16&productionType.values=B17&productionType.values=B18&productionType.values=B19&DataTables_Table_0_length=52,WRI,,,,,,2600.541
 NOR,Norway,Lang Sima,WRI1003309,580,60.4986,7.1447,Hydro,,,,,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show?name=&defaultValue=true&viewType=TABLE&areaType=BZN&atch=false&dateTime.dateTime=01.01.2016+00:00|UTC|YEAR&area.values=CTY|10YNO-0--------C!BZN|10YNO-1--------2&productionType.values=B01&productionType.values=B02&productionType.values=B03&productionType.values=B04&productionType.values=B05&productionType.values=B06&productionType.values=B07&productionType.values=B08&productionType.values=B09&productionType.values=B10&productionType.values=B11&productionType.values=B12&productionType.values=B13&productionType.values=B14&productionType.values=B20&productionType.values=B15&productionType.values=B16&productionType.values=B17&productionType.values=B18&productionType.values=B19&DataTables_Table_0_length=52,WRI,,,,,,2600.541
 NOR,Norway,Langfjord,WRI1003310,10,65.3752,12.7007,Hydro,,,,,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show?name=&defaultValue=true&viewType=TABLE&areaType=BZN&atch=false&dateTime.dateTime=01.01.2016+00:00|UTC|YEAR&area.values=CTY|10YNO-0--------C!BZN|10YNO-1--------2&productionType.values=B01&productionType.values=B02&productionType.values=B03&productionType.values=B04&productionType.values=B05&productionType.values=B06&productionType.values=B07&productionType.values=B08&productionType.values=B09&productionType.values=B10&productionType.values=B11&productionType.values=B12&productionType.values=B13&productionType.values=B14&productionType.values=B20&productionType.values=B15&productionType.values=B16&productionType.values=B17&productionType.values=B18&productionType.values=B19&DataTables_Table_0_length=256,WRI,,,,,,44.837
@@ -3134,7 +3100,6 @@ PNG,Papua New Guinea,Lake Hargy,WRI1022421,1.5,-5.3392,151.1341,Hydro,,,,,PNG Po
 PNG,Papua New Guinea,Lihir,WRI1022423,30,-3.1245,152.6464,Geothermal,,,,2005,Lihir Gold Ltd.,ThinkGeoEnergy,https://www.geothermal-energy.org/pdf/IGAstandard/WGC/2005/0136.pdf,WRI,,,,,,
 PNG,Papua New Guinea,Ok Menga,WRI1022431,57,-5.2448,141.1364,Hydro,,,,,OK Tedi Mining,OK Tedi Mining,http://www.oktedi.com/our-operations,WRI,,,,,,
 PNG,Papua New Guinea,Ok Tedi,WRI1022432,45,-5.2095,141.1827,Oil,,,,,OK Tedi Mining,OK Tedi Mining,http://www.oktedi.com/our-operations,WRI,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
 PNG,Papua New Guinea,Pauanda,WRI1022420,12,-6.0161,144.0579,Hydro,,,,,PNG Power Limited,PNG Power Limited,http://www.pngpower.com.pg/pdfs/PNG-Power-Info-Booklet-2016.pdf,WRI,,,,,,
 PNG,Papua New Guinea,Porgera,WRI1022429,13,-5.4655,143.1095,Oil,,,,,Barrick Mining,Barrick,http://www.barrick.com/operations/papua-new-guinea/porgera/,WRI,,,,,,
 PNG,Papua New Guinea,Ramu,WRI1022419,75,-6.2505,145.9805,Hydro,,,,,PNG Power Limited,PNG Power Limited,http://www.pngpower.com.pg/pdfs/PNG-Power-Info-Booklet-2016.pdf,WRI,,,,,,
@@ -3270,7 +3235,6 @@ SAU,Saudi Arabia,ABQ PP,WRI1030636,162,25.94,49.688,Gas,,,,2002,Saudi Aramco,ECR
 SAU,Saudi Arabia,AL WAJH,WRI1030638,263.4,26.23,36.487,Oil,,,,2013,Saudi Electricity Company (SEC),ECRA,http://www.ecra.gov.sa/en-us/DataAndStatistics/NationalRecord/StationCapacities/Pages/Home.aspx,WRI,,,,,,774.744
 SAU,Saudi Arabia,AL-JOUF,WRI1030640,348,29.78,40.012,Oil,,,,2012,Saudi Electricity Company (SEC),ECRA,http://www.ecra.gov.sa/en-us/DataAndStatistics/NationalRecord/StationCapacities/Pages/Home.aspx,WRI,,,,,,1023.58
 SAU,Saudi Arabia,AL-QURAYYAT,WRI1030642,532.7,31.26,37.424,Oil,,,,2016,Saudi Electricity Company (SEC),ECRA,http://www.ecra.gov.sa/en-us/DataAndStatistics/NationalRecord/StationCapacities/Pages/Home.aspx,WRI,,,,,,1566.842
-,,,,,,,,,,,,,,,,,,,,,
 SAU,Saudi Arabia,ARAR,WRI1030644,408.6,30.93,41.056,Oil,,,,2015,Saudi Electricity Company (SEC),ECRA,http://www.ecra.gov.sa/en-us/DataAndStatistics/NationalRecord/StationCapacities/Pages/Home.aspx,WRI,,,,,,1201.824
 SAU,Saudi Arabia,ASIR,WRI1030645,695.82,18.25,42.578,Oil,,,,2006,Saudi Electricity Company (SEC),ECRA,http://www.ecra.gov.sa/en-us/DataAndStatistics/NationalRecord/StationCapacities/Pages/Home.aspx,WRI,,,,,,2046.63
 SAU,Saudi Arabia,UTHMANIYAH CO-GENERATION GAS PLANT,WRI1030719,496.7,25.19,49.307,Gas,,,,2015,Tihama Power Generation Company,ECRA,http://www.ecra.gov.sa/en-us/DataAndStatistics/NationalRecord/StationCapacities/Pages/Home.aspx,WRI,,,,,,2443.204
@@ -3292,7 +3256,6 @@ SRB,Serbia,HE DJERDAP II,WRI1020284,270,44.3065,22.5667,Hydro,,,,,,ENTSOE,https:
 SRB,Serbia,RHE BAJINA BASTA,WRI1020281,614,43.9645,19.4102,Hydro,,,,,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show,GEODB,,,,1.39,,2984.451
 SRB,Serbia,TE KOLUBARA,WRI1020285,245,44.4806,20.2934,Coal,,,,,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show,GEODB,,,,,,975.336
 SRB,Serbia,TE KOSOVO A,WRI1020280,617,42.6773,21.0886,Coal,,,,,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show,WRI,,,,,,2456.254
-,,,,,,,,,,,,,,,,,,,,,
 SRB,Serbia,TE KOSTOLAC A,WRI1020283,281,44.7229,21.1717,Coal,,,,,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show,GEODB,,,,4.58,,1118.651
 SRB,Serbia,TE KOSTOLAC B,WRI1020278,697,44.7307,21.2104,Coal,,,,,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show,GEODB,,,,14.9,,2774.731
 SRB,Serbia,TE MORAVA,WRI1020288,110,44.2248,21.1627,Coal,,,,,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show,GEODB,,,,0.98,,437.906
@@ -3366,7 +3329,6 @@ ZAF,South Africa,Lesedi Solar Power Plant,WRI1026050,75,-28.316,23.3452,Solar,,,
 ZAF,South Africa,Lethabo,WRI1000128,3708,-26.7403,27.975,Coal,,,,1985,Eskom,Eskom,http://www.eskom.co.za/OurCompany/PhotoGallery/Pages/Eskom_Power_Stations.aspx,WRI,,,,,,22015.716
 ZAF,South Africa,Letsatsi Solar Power Plant,WRI1026051,75,-28.915,25.9199,Solar,,,,2014,Letsatsi Solar Energy Limited,Solar Reserve,http://www.solarreserve.com/en/global-projects/pv/letsatsi,Industry About,,,,,,40.725
 ZAF,South Africa,Linde Solar Power Plant,WRI1026052,40,-31,24.6512,Solar,,,,,Scatec Solar,Scatec Solar,http://www.scatecsolar.com/Portfolio/South-Africa/Linde-South-Africa-40-MW,Industry About,,,,,,21.72
-,,,,,,,,,,,,,,,,,,,,,
 SA,South Africa,Lomati,WRI1026025,10.1,-25.772,31.0406,Biomass,,,,,Lomati Energy,CDM,https://cdm.unfccc.int/filestorage/t/3/9Y54XCFT6QEUHSP8G2LBKDNOVI0MR7.pdf/7476-PDD-%202012%2012%2020.pdf?t=cEV8b2pkOGJqfDAG2GqZOvOHHIj_8tAhv1oC,WRI,,,,,,225.022
 SA,South Africa,Longyuan Mulilo De Aar Maanhaarberg Wind Energy Facility,WRI1061283,100,-30.7259,23.9137,Wind,,,,,Longyuan South Africa Renewables / Mulilo,Mulilo,http://mulilo.com/Projects/longyuan-mulilo-de-aar-wind-power/,WRI,,,,,,44.8
 SA,South Africa,Longyuan Mulilo Green Energy De Aar 2 North Wind Energy Facility,WRI1061284,144,-30.5411,24.26,Wind,,,,2017,Longyuan South Africa Renewables / Mulilo,Mulilo,http://mulilo.com/Projects/longyuan-mulilo-de-aar-2-north/,WRI,,,,,,64.512
@@ -3428,7 +3390,6 @@ KOR,South Korea,Hapchon,WRI1029847,100,35.5337,128.0316,Hydro,,,,,Korea Electric
 KOR,South Korea,Honam,WRI1000210,500,34.8545,127.7351,Coal,,,,1973,Korea East West Power,KEWP,http://www.ewp.co.kr/eng/main/main.asp,WRI,,,,,,4274.688
 KOR,South Korea,Hwacheon,WRI1000219,108,38.1174,127.7785,Hydro,,,,1944,Korea Hydro and Nuclear,KHNP,https://cms.khnp.co.kr/eng/hydroelectric-plants/,WRI,,,,,,139.296
 KOR,South Korea,Hwaseong,WRI1029909,1,37.0518,126.4412,Solar,,,,,,CDM,https://cdm.unfccc.int/Projects/DB/BSI1213004125.81/view,WRI,,,,,,27.03
-,,,,,,,,,,,,,,,,,,,,,
 KOR,South Korea,Ilsan,WRI1000212,900,37.6475,126.7973,Gas,,,,,Korea East West Power,KEWP,http://www.ewp.co.kr/eng/main/main.asp,GEODB,,,,,,3721.122
 KOR,South Korea,Imha,WRI1029851,50,36.5384,128.8813,Hydro,,,,,Korea Electric Power Company,KEPCO,https://home.kepco.co.kr/kepco/EN/C/htmlView/ENCBHP003.do?menuCd=EN030204,WRI,,,,,,64.489
 KOR,South Korea,Incheon,WRI1000195,3052,37.5111,126.6078,Gas,,,,2015,Korea Midland Power (KOMIPO),POSCO,http://eng.poscoenergy.com/eng/renew/_service/business/generator/incheon_power01.asp,GEODB,,,,,,12618.739
@@ -3453,10 +3414,6 @@ KOR,South Korea,Shinan,WRI1029932,3,38.0208,128.4965,Wind,,,,,,CDM,https://cdm.u
 KOR,South Korea,Shinincheon,WRI1000204,1800,37.508,126.6159,Gas,,,,2012,Korea Southern Power,KSP,https://www.kospo.co.kr/english/?mn=sub&mcode=01030100,WRI,,,,,,7442.245
 KOR,South Korea,Sihwa Lake Tidal Power Plant,WRI1029923,254,37.3142,126.6136,Wave and Tidal,,,,,Korea Water Resources Corporation,Korea Water Resources Corporation,http://english.kwater.or.kr/eng/busi/project03Page.do?s_mid=1192,WRI,,,,,,
 KOR,South Korea,Somjingang (Chilbo),WRI1029845,34,34.9191,126.857,Hydro,,,,,Korea Electric Power Company,KEPCO,https://home.kepco.co.kr/kepco/EN/C/htmlView/ENCBHP003.do?menuCd=EN030204,WRI,,,,,,43.852
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,
 KOR,South Korea,Suwan Energy,WRI1029904,118,35.1968,126.8305,Gas,,,,2011,KHDC,Korea Herald,http://www.koreaherald.com/view.php?ud=20160816000350,WRI,,,,,,487.88
 KOR,South Korea,Taean,WRI1029914,2,36.8043,126.2005,Solar,,,,,,CDM,https://cdm.unfccc.int/Projects/DB/KFQ1248772035.52/view,WRI,,,,,,54.059
 S-KOR,South Korea,Taean,WRI1000196,4000,36.904,126.233,Coal,,,,,Korea Western Power,KWP,https://www.iwest.co.kr/eng/sub.asp?mid=1280&act=abou0602,GEODB,,,,,,34197.504
