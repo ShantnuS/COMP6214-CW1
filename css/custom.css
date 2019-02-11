@@ -429,3 +429,9 @@ img::-moz-selection {
 .bg-primary {
     background-color: orangered;
 }
+
+#inner_remaining {
+    background: white;
+    border: #222;
+    height: calc(100% - 120px); 
+}
