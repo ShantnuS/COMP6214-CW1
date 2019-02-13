@@ -6,3 +6,11 @@ Just by seeing:
 csvlint.io
 	1. Lots of empty rows found, e.g. 479, 536, 591, 692, etc. 
 		1.1. Easy fix in Excel by selecting all data then "Data" > "Filter". Now select the first column and filter only blank items. Delete all the items here which are completely empty.
+
+
+
+STUFF I MIGHT FIND:
+	1. Different names for same entry (i.e. UK and GB)
+	2. Duplicate entries 
+	3. Out of date entries (e.g. Rhodesia) 
+	4. Rows in incorrect format (Total Production) 
