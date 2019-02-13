@@ -14,3 +14,4 @@ STUFF I MIGHT FIND:
 	2. Duplicate entries 
 	3. Out of date entries (e.g. Rhodesia) 
 	4. Rows in incorrect format (Total Production) 
+	5. Vandalism (netflix and chile) 
