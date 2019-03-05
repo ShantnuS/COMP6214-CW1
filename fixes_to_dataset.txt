@@ -1,6 +1,8 @@
 Just by seeing:
 	1. Some cells had values shifted by one column. This was easy to see because there were empty cells in the beginning part of the row.
 		1.1. Countries which had this issue included UK, Italy, India, Ecuador, Chile (one also missing country code), Australia.
+	2. There were rows with "ALL XXX" for a country with the totals for some, but not all, countries. This is inconsistent. 
+		2.1. These were IRAQ and INDIA. I removed this using the find function on Excel.
 
 		
 csvlint.io
@@ -8,6 +10,9 @@ csvlint.io
 		1.1. Easy fix in Excel by selecting all data then "Data" > "Filter". Now select the first column and filter only blank items. Delete all the items here which are completely empty.
 
 
+Open Refine:
+	1. Spelling errors for multiple countries along with inconsistencies
+		1.1. For example United kingdom is spelt incorrectly and also called UK. Some rows have blank country names, but have country codes. 
 
 STUFF I MIGHT FIND:
 	1. Different names for same entry (i.e. UK and GB)
