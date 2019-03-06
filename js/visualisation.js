@@ -57,6 +57,14 @@ function analyze(error, dataset, world_map) {
 
     function normalise_value(val, max, min) { return (val - min) / (max - min); }
 
+    function getPopulation(country_code){
+        var url = "https://restcountries.eu/rest/v2/alpha/"+country_code
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", url, false ); // false for synchronous request
+        xmlHttp.send( null );
+        return JSON.parse(xmlHttp.responseText);
+    }
+
     function updateChoroplethColours() {
         
         all_countries = [];
@@ -82,7 +90,7 @@ function analyze(error, dataset, world_map) {
 
         if (isPerCapita == 'true'){
             for(var k in all_countries){
-                console.log(k + " " +all_countries[k]);
+                all_countries[k] = all_countries[k] / getPopulation(k);
             }
         }
 
