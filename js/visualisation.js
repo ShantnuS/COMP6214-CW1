@@ -1,6 +1,8 @@
 var width = 1280;
 var height = 720;
 
+var current_key = "Total";
+
 //create a svg with the width and height variables 
 var map = d3.select("div#map").append("svg")
 .attr("width", width)
@@ -89,11 +91,11 @@ function analyze(error, dataset, world_map) {
         var isPerCapita = d3.select('input[name="radiob"]:checked').node().value;
         console.log(isPerCapita);
 
-        if (isPerCapita == 'true'){
-            for(var k in all_countries){
-                all_countries[k] = all_countries[k] / getCountryData(k);
-            }
-        }
+        // if (isPerCapita == 'true'){
+        //     for(var k in all_countries){
+        //         all_countries[k] = all_countries[k] / getCountryData(k);
+        //     }
+        // }
 
         countries = Object.keys(all_countries);
         var max_data = d3.max(countries, function(d){return all_countries[d];})
@@ -177,10 +179,10 @@ map.selectAll("path.active").classed("active", false);
 d3.select(el).classed("active", true);
 
 // write tooltip message and move it into position
-var msg = "<b>" + data.properties.name + "</b>";
+var msg = "<h4>" + data.properties.name + "</h4>";
 var population = numberWithCommas(getCountryData(data.properties.iso_a3)['population']);
 var flag = "<img src=\""+getCountryData(data.properties.iso_a3)['flag']+"\" width=\"100%\"></img>";
-if (data.visVal) { msg += "<br/>"+ data.visVal + "<br/>" +population + flag; }
+if (data.visVal) { msg += "<br/>"+ current_key + ": "+ data.visVal + "<br/>" + "Population: "+ population + flag; }
 d3.select("#map_tooltip").html(msg)
     .style("left", (d3.event.pageX) + "px")
     .style("top", (d3.event.pageY) + "px"); 
