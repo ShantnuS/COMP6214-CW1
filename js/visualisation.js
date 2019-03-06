@@ -161,8 +161,7 @@ function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-function updateSelected(el, data)
-{
+function updateSelected(el, data){
 // we've clicked on the currently active country
 // deactivate it and hide the tooltip
 if(d3.select(el).classed("active")){
@@ -184,7 +183,7 @@ var flag = "<img src=\""+getCountryData(data.properties.iso_a3)['flag']+"\" widt
 if (data.visVal) { msg += "<br/>"+ data.visVal + "<br/>" +population + flag; }
 d3.select("#map_tooltip").html(msg)
     .style("left", (d3.event.pageX) + "px")
-    .style("top", (d3.event.pageY - 28) + "px"); 
+    .style("top", (d3.event.pageY) + "px"); 
 
 // make sure tooltip is visible
 d3.select("#map_tooltip").classed("active",true);
