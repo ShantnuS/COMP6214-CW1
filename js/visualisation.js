@@ -8,52 +8,47 @@ var map = d3.select("div#map").append("svg")
 
 //add scale for the map
 var scale = 7*(width-1)/2/Math.PI;
-//console.log(scale)
 var scale = 200
 
 //set a projection so that 3D coordinates can be placed on a 2D map
-var projection = d3.geoMercator()
-.translate([600,500])
-.scale(scale);
+var projection = d3.geoMercator().translate([600,500]).scale(scale);
 
 //create a path to add the features in the map file to
-var path = d3.geoPath()
-.projection(projection);
+var path = d3.geoPath().projection(projection);
 
-function restructure_chocolate(data, i) {
-return {
-id: i,
-company: data["Company"],
-name: data["Name"],
-ref: data["Ref"],
-percent: data["Cocoa Percent"],
-loc: data["Company Location"],
-origin: data["Broad Bean Origin"],
-type: data["Bean Type"],
-rating: +data["Rating"],
-date: +data["Review Date"],
-choconame: data["Company"]+"-"+data["Name"]
-};
+function restructure_dataset(data, i) {
+    return {
+        id: i,
+        country_code: data["country"],
+        country_name: data["country_long"],
+        name: data["name"],
+        capacity: data["capacity_mw"],
+        latitude: data["latitude"],
+        longitude: data["longitude"],
+        fuel_type: data["fuel1"],
+        commission: data["commissioning_year"],
+        source: data["source"],
+        generation: data["estimated_generation_gwh"]
+    };
 }     
 
-d3.queue()
-.defer(d3.csv, "chocolate-bars-csv.csv", restructure_chocolate) 
-.defer(d3.json, "custom.geo.json")
-.await(analyze);
+d3.queue().defer(d3.csv, "fixed_dataset.csv", restructure_dataset) 
+        .defer(d3.json, "custom.geo.json")
+        .await(analyze);
 
 function analyze(error, dataset, world_map) {
-if (error){
-console.log(error);
-return;
+    if (error){
+        console.log(error);
+    return;
 }
 
 map.selectAll("path")
-.data(world_map.features)
-.enter()
-.append("path")
-.attr("d", path)
-.classed("country", true)
-.on("click", function(d) {  
+    .data(world_map.features)
+    .enter()
+    .append("path")
+    .attr("d", path)
+    .classed("country", true)
+    .on("click", function(d) {  
     updateSelected(this, d);
 });
 
@@ -63,19 +58,28 @@ d3.select("#radio_button form").on("change", updateChoroplethColours);
 function updateChoroplethColours() {
 all_countries = [];
 
-var column_name = d3.select('input[name="choco"]:checked').node().value;
+//var column_name = d3.select('input[name="radiob"]:checked').node().value;
+var column_name = "country_name";
+var isPerCapita = d3.select('input[name="radiob"]:checked').node().value;
+
+console.log(isPerCapita);
 
 dataset.forEach(function(element) {
     var bin_name = element[column_name];
+
     if(all_countries[bin_name]){
-    all_countries[bin_name] = all_countries[bin_name]+1;
+        all_countries[bin_name] = all_countries[bin_name]+1;
     }else{
-    all_countries[bin_name] = 1;
-    };    
+        all_countries[bin_name] = 1;
+    };   
 });
+
+
 
 countries = Object.keys(all_countries);
 var max_data = d3.max(countries, function(d){return all_countries[d];})
+
+console.log(all_countries);
 
 var color = d3.scaleQuantize()
     .domain([0, max_data])
