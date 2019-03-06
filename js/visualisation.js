@@ -36,6 +36,14 @@ d3.queue().defer(d3.csv, "fixed_dataset.csv", restructure_dataset)
         .defer(d3.json, "custom.geo.json")
         .await(analyze);
 
+function getCountryData(country_code){
+    var url = "https://restcountries.eu/rest/v2/alpha/"+country_code
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", url, false ); // false for synchronous request
+    xmlHttp.send( null );
+    return JSON.parse(xmlHttp.responseText);
+}
+
 function analyze(error, dataset, world_map) {
         if (error){
             console.log(error);
@@ -57,13 +65,6 @@ function analyze(error, dataset, world_map) {
 
     function normalise_value(val, max, min) { return (val - min) / (max - min); }
 
-    function getPopulation(country_code){
-        var url = "https://restcountries.eu/rest/v2/alpha/"+country_code
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.open( "GET", url, false ); // false for synchronous request
-        xmlHttp.send( null );
-        return JSON.parse(xmlHttp.responseText);
-    }
 
     function updateChoroplethColours() {
         
@@ -90,7 +91,7 @@ function analyze(error, dataset, world_map) {
 
         if (isPerCapita == 'true'){
             for(var k in all_countries){
-                all_countries[k] = all_countries[k] / getPopulation(k);
+                all_countries[k] = all_countries[k] / getCountryData(k);
             }
         }
 
@@ -156,6 +157,10 @@ function analyze(error, dataset, world_map) {
     }
 }   
 
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 function updateSelected(el, data)
 {
 // we've clicked on the currently active country
@@ -174,7 +179,9 @@ d3.select(el).classed("active", true);
 
 // write tooltip message and move it into position
 var msg = "<b>" + data.properties.name + "</b>";
-if (data.visVal) { msg += "<br/>"+data.visVal; }
+var population = numberWithCommas(getCountryData(data.properties.iso_a3)['population']);
+var flag = "<img src=\""+getCountryData(data.properties.iso_a3)['flag']+"\" width=\"100%\"></img>";
+if (data.visVal) { msg += "<br/>"+ data.visVal + "<br/>" +population + flag; }
 d3.select("#map_tooltip").html(msg)
     .style("left", (d3.event.pageX) + "px")
     .style("top", (d3.event.pageY - 28) + "px"); 
