@@ -55,6 +55,8 @@ function analyze(error, dataset, world_map) {
     updateChoroplethColours();
     d3.select("#radio_button form").on("change", updateChoroplethColours);
 
+    function normalise_value(val, max, min) { return (val - min) / (max - min); }
+
     function updateChoroplethColours() {
         
         all_countries = [];
@@ -67,6 +69,8 @@ function analyze(error, dataset, world_map) {
             var bin_name = element[column_name];
             if(all_countries[bin_name]){
                 all_countries[bin_name] = all_countries[bin_name]+1;
+                //all_countries[bin_name] = all_countries[bin_name]+parseInt(element["capacity"]);
+                //all_countries[bin_name] = all_countries[bin_name]+parseInt(element["generation"]);
             }else{
                 all_countries[bin_name] = 1;
             };   
@@ -81,12 +85,12 @@ function analyze(error, dataset, world_map) {
         var max_data = d3.max(countries, function(d){return all_countries[d];})
 
 
-        // var color = d3.scaleQuantize()
-        //     .domain([0, max_data])
-        //     .range(d3.schemeOranges[9]);
+        var color = d3.scaleQuantize()
+            .domain([0, max_data])
+            .range(d3.schemeOranges[9]);
 
-        var color = d3.scaleSequential(d3.interpolateOranges)
-            .domain([0, 100]);
+        // var color = d3.scaleSequential(d3.interpolateOranges)
+        //     .domain([0, max_data]);
 
         map.selectAll("path")
             .style("fill", function(d) {
@@ -97,7 +101,8 @@ function analyze(error, dataset, world_map) {
                 return color(val);
             }
         });
-            
+        
+        //Legend 
         var x = d3.scaleLinear()
             .domain([0,max_data])
             .rangeRound([600, 860]);
