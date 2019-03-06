@@ -180,9 +180,16 @@ d3.select(el).classed("active", true);
 
 // write tooltip message and move it into position
 var msg = "<h4>" + data.properties.name + "</h4>";
-var population = numberWithCommas(getCountryData(data.properties.iso_a3)['population']);
-var flag = "<img src=\""+getCountryData(data.properties.iso_a3)['flag']+"\" width=\"100%\"></img>";
-if (data.visVal) { msg += "<br/>"+ current_key + ": "+ data.visVal + "<br/>" + "Population: "+ population + flag; }
+if (data.visVal) { 
+    var population = numberWithCommas(getCountryData(data.properties.iso_a3)['population']);
+    var flag = "<img src=\""+getCountryData(data.properties.iso_a3)['flag']+"\" width=\"100%\"></img>";
+    msg += "<br/>"+ current_key + ": "+ data.visVal + "<br/>" + "Population: "+ population + flag; 
+}
+else{
+    var population = numberWithCommas(getCountryData(data.properties.iso_a3)['population']);
+    var flag = "<img src=\""+getCountryData(data.properties.iso_a3)['flag']+"\" width=\"100%\"></img>";
+    msg += "<br/>"+"<i>No Data</i>" + "<br/>" + "Population: "+ population + flag; 
+}
 d3.select("#map_tooltip").html(msg)
     .style("left", (d3.event.pageX) + "px")
     .style("top", (d3.event.pageY) + "px"); 
