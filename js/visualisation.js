@@ -79,7 +79,12 @@ function analyze(error, dataset, world_map) {
         //Convert to per capita here if needed
         var isPerCapita = d3.select('input[name="radiob"]:checked').node().value;
         console.log(isPerCapita);
-        console.log(all_countries);
+
+        if (isPerCapita == 'true'){
+            for(var k in all_countries){
+                console.log(k + " " +all_countries[k]);
+            }
+        }
 
         countries = Object.keys(all_countries);
         var max_data = d3.max(countries, function(d){return all_countries[d];})
