@@ -60,13 +60,10 @@ all_countries = [];
 
 //var column_name = d3.select('input[name="radiob"]:checked').node().value;
 var column_name = "country_name";
-var isPerCapita = d3.select('input[name="radiob"]:checked').node().value;
 
-console.log(isPerCapita);
-
+//Calculates totals for each country, can add actual generation/capacity instead of 1
 dataset.forEach(function(element) {
     var bin_name = element[column_name];
-
     if(all_countries[bin_name]){
         all_countries[bin_name] = all_countries[bin_name]+1;
     }else{
@@ -74,16 +71,18 @@ dataset.forEach(function(element) {
     };   
 });
 
-
+//Convert to per capita here if needed
+var isPerCapita = d3.select('input[name="radiob"]:checked').node().value;
+console.log(isPerCapita);
+console.log(all_countries);
 
 countries = Object.keys(all_countries);
 var max_data = d3.max(countries, function(d){return all_countries[d];})
 
-console.log(all_countries);
 
 var color = d3.scaleQuantize()
     .domain([0, max_data])
-    .range(d3.schemeBlues[9]);
+    .range(d3.schemeOranges[9]);
 
 map.selectAll("path")
     .style("fill", function(d) {
