@@ -37,99 +37,105 @@ d3.queue().defer(d3.csv, "fixed_dataset.csv", restructure_dataset)
         .await(analyze);
 
 function analyze(error, dataset, world_map) {
-    if (error){
-        console.log(error);
-    return;
-}
+        if (error){
+            console.log(error);
+            return;
+        }
 
-map.selectAll("path")
-    .data(world_map.features)
-    .enter()
-    .append("path")
-    .attr("d", path)
-    .classed("country", true)
-    .on("click", function(d) {  
-    updateSelected(this, d);
-});
-
-updateChoroplethColours();
-d3.select("#radio_button form").on("change", updateChoroplethColours);
-
-function updateChoroplethColours() {
-all_countries = [];
-
-//var column_name = d3.select('input[name="radiob"]:checked').node().value;
-var column_name = "country_name";
-
-//Calculates totals for each country, can add actual generation/capacity instead of 1
-dataset.forEach(function(element) {
-    var bin_name = element[column_name];
-    if(all_countries[bin_name]){
-        all_countries[bin_name] = all_countries[bin_name]+1;
-    }else{
-        all_countries[bin_name] = 1;
-    };   
-});
-
-//Convert to per capita here if needed
-var isPerCapita = d3.select('input[name="radiob"]:checked').node().value;
-console.log(isPerCapita);
-console.log(all_countries);
-
-countries = Object.keys(all_countries);
-var max_data = d3.max(countries, function(d){return all_countries[d];})
-
-
-var color = d3.scaleQuantize()
-    .domain([0, max_data])
-    .range(d3.schemeOranges[9]);
-
-map.selectAll("path")
-    .style("fill", function(d) {
-    var val = all_countries[d.properties.name];
-    d.visVal = val;
-    if(val){
-        return color(val);
-    }
+    map.selectAll("path")
+        .data(world_map.features)
+        .enter()
+        .append("path")
+        .attr("d", path)
+        .classed("country", true)
+        .on("click", function(d) {  
+        updateSelected(this, d);
     });
-    var x = d3.scaleLinear()
-    .domain([0,max_data])
-    .rangeRound([600, 860]);
 
-map.selectAll("g.key").remove();
-var g = map.append("g")
-    .attr("class", "key")
-    .attr("transform", "translate(0,40)");
+    updateChoroplethColours();
+    d3.select("#radio_button form").on("change", updateChoroplethColours);
 
-g.selectAll("rect")
-    .data(color.range().map(function(d) {
-        d = color.invertExtent(d);
-        if (d[0] == null) d[0] = x.domain()[0];
-        if (d[1] == null) d[1] = x.domain()[1];
-        return d;
-    }))
-    .enter().append("rect")
-    .attr("height", 8)
-    .attr("x", function(d) { return x(d[0]); })
-    .attr("width", function(d) { return x(d[1]) - x(d[0]); })
-    .attr("fill", function(d) { return color(d[0]); });
+    function updateChoroplethColours() {
+        
+        all_countries = [];
 
-g.append("text")
-    .attr("class", "caption")
-    .attr("x", x.range()[0])
-    .attr("y", -6)
-    .attr("fill", "#000")
-    .attr("text-anchor", "start")
-    .attr("font-weight", "bold")
-    .text(column_name);
+        //var column_name = d3.select('input[name="radiob"]:checked').node().value;
+        var column_name = "country_code";
 
-g.call(d3.axisBottom(x)
-    .tickSize(13)
-    .tickFormat(function(x, i) { return x; })
-    .tickValues(color.domain()))
-    .select(".domain")
-    .remove();
-}
+        //Calculates totals for each country, can add actual generation/capacity instead of 1
+        dataset.forEach(function(element) {
+            var bin_name = element[column_name];
+            if(all_countries[bin_name]){
+                all_countries[bin_name] = all_countries[bin_name]+1;
+            }else{
+                all_countries[bin_name] = 1;
+            };   
+        });
+
+        //Convert to per capita here if needed
+        var isPerCapita = d3.select('input[name="radiob"]:checked').node().value;
+        console.log(isPerCapita);
+        console.log(all_countries);
+
+        countries = Object.keys(all_countries);
+        var max_data = d3.max(countries, function(d){return all_countries[d];})
+
+
+        // var color = d3.scaleQuantize()
+        //     .domain([0, max_data])
+        //     .range(d3.schemeOranges[9]);
+
+        var color = d3.scaleSequential(d3.interpolateOranges)
+            .domain([0, 100]);
+
+        map.selectAll("path")
+            .style("fill", function(d) {
+
+            var val = all_countries[d.properties.iso_a3];
+            d.visVal = val;
+            if(val){
+                return color(val);
+            }
+        });
+            
+        var x = d3.scaleLinear()
+            .domain([0,max_data])
+            .rangeRound([600, 860]);
+
+        map.selectAll("g.key").remove();
+        var g = map.append("g")
+            .attr("class", "key")
+            .attr("transform", "translate(0,40)");
+
+        g.selectAll("rect")
+            .data(color.range().map(function(d) {
+                d = color.invertExtent(d);
+                if (d[0] == null) d[0] = x.domain()[0];
+                if (d[1] == null) d[1] = x.domain()[1];
+                return d;
+            }))
+            .enter().append("rect")
+            .attr("height", 8)
+            .attr("x", function(d) { return x(d[0]); })
+            .attr("width", function(d) { return x(d[1]) - x(d[0]); })
+            .attr("fill", function(d) { return color(d[0]); });
+
+        g.append("text")
+            .attr("class", "caption")
+            .attr("x", x.range()[0])
+            .attr("y", -6)
+            .attr("fill", "#000")
+            .attr("text-anchor", "start")
+            .attr("font-weight", "bold")
+            .text(column_name);
+
+        g.call(d3.axisBottom(x)
+            .tickSize(13)
+            .tickFormat(function(x, i) { return x; })
+            .tickValues(color.domain()))
+            .select(".domain")
+            .remove();
+    }
 }   
 
 function updateSelected(el, data)
@@ -149,7 +155,7 @@ map.selectAll("path.active").classed("active", false);
 d3.select(el).classed("active", true);
 
 // write tooltip message and move it into position
-var msg = data.properties.name;
+var msg = "<b>" + data.properties.name + "</b>";
 if (data.visVal) { msg += "<br/>"+data.visVal; }
 d3.select("#map_tooltip").html(msg)
     .style("left", (d3.event.pageX) + "px")
