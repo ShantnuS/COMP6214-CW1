@@ -2019,7 +2019,7 @@ ITA,Italy,BAGNORE 3,WRI1021701,19,42.8416,11.5588,Geothermal,,,,1998,,ENTSOE,htt
 ITA,Italy,BAGNORE 4,WRI1021456,39,42.8416,11.5588,Geothermal,,,,1998,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show,WRI,,,,,,269
 ITA,Italy,BARGI CENTRALE,WRI1002852,281,44.1705,11.0888,Hydro,,,,,,TERNA,http://www.terna.it/en-gb/sistemaelettrico/transparencyreport/generation/installedgenerationcapacity.aspx,CARMA,,,,72,,1265
 ITA,Italy,BASCHI,WRI1021310,80,42.6564,12.2358,Hydro,,,,,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show,WRI,,,,,,360
-ITA,Italy,BASTARDO,WRI1002853,150,42.8971,12.5381,Coal,,,,,ENEL,Association of Carbon Italy,http://www.assocarboni.it/index.php/en/the-coal/coal-plants-in-italy,GEODB,,,,,,9.68E12
+ITA,Italy,BASTARDO,WRI1002853,150,42.8971,12.5381,Coal,,,,,ENEL,Association of Carbon Italy,http://www.assocarboni.it/index.php/en/the-coal/coal-plants-in-italy,GEODB,,,,,,9680
 ITA,Italy,BOAZZO,WRI1021297,95,45.9955,10.5229,Hydro,,,,,,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show,WRI,,,,,,428
 ITA,Italy,BRESSANONE,WRI1021300,89,46.7782,11.6321,Hydro,,,,,Ghella,ENTSOE,https://transparency.entsoe.eu/generation/r2/installedCapacityPerProductionUnit/show,WRI,,,,,,401
 ITA,Italy,BRINDISI NORD,WRI1002854,640,40.6432,17.9802,Coal,,,,,A2A,Association of Carbon Italy,http://www.assocarboni.it/index.php/en/the-coal/coal-plants-in-italy,GEODB,,,,0,,3509
@@ -3366,7 +3366,7 @@ KOR,South Korea,Bukeju,WRI1029843,150,33.537,126.5974,Coal,,,,2000,Korea Midland
 KOR,South Korea,Bundang,WRI1000190,922,37.3642,127.1482,Gas,,,,,Korea South East Power (KOSEP),KOSEP,https://www.kosep.co.kr/kosep/hw/en/ov/ovhw18/main.do?menuCd=EN02030102,GEODB,,,,,,3812.083
 KOR,South Korea,Busan (pusan),WRI1000201,1800,35.0851,129.0003,Gas,,,,,Korea Southern Power,KSP,https://www.kospo.co.kr/english/?mn=sub&mcode=01030100,GEODB,,,,,,7442.245
 KOR,South Korea,Chan Cheon,WRI1000220,62,37.9672,127.6699,Hydro,,,,1965,Korea Hydro and Nuclear,KHNP,https://cms.khnp.co.kr/eng/hydroelectric-plants/,WRI,,,,,,79.966
-KOR,South Korea,ChangnyeongHaman,WRI1029870,5,35.3774,128.551,Hydro,,,,,Korea Water Resources Corporation,CDM,https://cdm.unfccc.int/Projects/DB/Korean%20Standards%20Association1347947889.52/view,WRI,,,,,,346346436
+KOR,South Korea,ChangnyeongHaman,WRI1029870,5,35.3774,128.551,Hydro,,,,,Korea Water Resources Corporation,CDM,https://cdm.unfccc.int/Projects/DB/Korean%20Standards%20Association1347947889.52/view,WRI,,,,,,346
 KOR,South Korea,Cheongpyeong,WRI1000207,400,37.7232,127.421,Hydro,,,,1980,Korea Southern Power,KSP,https://www.kospo.co.kr/english/?mn=sub&mcode=01030100,WRI,,,,,,515.911
 KOR,South Korea,Cheongsong,WRI1029849,600,36.4052,129.016,Hydro,,,,2000,Korea Western Power,KWP,http://www.westernpower.co.kr/english/power/generation.asp,GEODB,,,,,,773.867
 KOR,South Korea,Chilgok,WRI1029875,3,36.0154,128.4004,Hydro,,,,,Korea Water Resources Corporation,CDM,https://cdm.unfccc.int/Projects/DB/Korean%20Standards%20Association1347523657.85/view,WRI,,,,,,3.869
@@ -4780,7 +4780,7 @@ UZB,Uzbekistan,Novo Angren,WRI1000139,2100,40.9233,69.8174,Coal,,,,1985,Uzbekene
 UZB,Uzbekistan,Syrdarya,WRI1000138,3000,40.2287,69.1005,Gas,,,,1972,Uzbekenergo,Asian Development Bank,http://www.carecprogram.org/ru/uploads/docs/Projects/TA/TA4029-UZB-Volume-1-Sections-I-III.pdf,GEODB,,,,,,14376.078
 UZB,Uzbekistan,Takhiatash,WRI1000143,730,42.3175,59.5553,Gas,,,,1963,Uzbekenergo,Asian Development Bank,http://www.carecprogram.org/ru/uploads/docs/Projects/TA/TA4029-UZB-Volume-1-Sections-I-III.pdf,GEODB,,,,,,3498.179
 UZB,Uzbekistan,Talimardjan,WRI1000142,800,38.4809,65.6315,Gas,,,,2014,Uzbekenergo,Asian Development Bank,http://www.carecprogram.org/ru/uploads/docs/Projects/TA/TA4029-UZB-Volume-1-Sections-I-III.pdf,GEODB,,,,,,3833.621
-UZB,Uzbekistan,Tashkent,WRI1000140,2230,41.3822,69.3677,Gas,,,,2008,Uzbekenergo,Chibu Electric Provider,http://www.chuden.co.jp/english/corporate/press2004/0117_1.html,GEODB,,,,,,4.57E16
+UZB,Uzbekistan,Tashkent,WRI1000140,2230,41.3822,69.3677,Gas,,,,2008,Uzbekenergo,Chibu Electric Provider,http://www.chuden.co.jp/english/corporate/press2004/0117_1.html,GEODB,,,,,,45700.0
 UZB,Uzbekistan,Tavak,WRI1000149,70,41.5542,69.6811,Hydro,,,,,Uzbekenergo,Asian Development Bank,http://www.carecprogram.org/ru/uploads/docs/Projects/TA/TA4029-UZB-Volume-1-Sections-I-III.pdf,CARMA,,,,,,726.404
 VNM,Vietnam,A Luoi,WRI1030864,170,16.2266,107.2728,Hydro,,,,2012,Central Hydro Power JSC,Open Development Vietnam,https://data.opendevelopmentmekong.net/vi/library_record/a-luoi-hydropower,Open Development Vietnam,,,,,690,594.175
 VNM,Vietnam,A Vuong,WRI1030859,210,15.7998,107.6171,Hydro,,,,2008,A Vuong Hydro Power JSC,Open Development Vietnam,https://data.opendevelopmentmekong.net/vi/library_record/a-vuong-hydropower,Open Development Vietnam,,,,,815,733.981
