@@ -75,22 +75,36 @@ function analyze(error, dataset, world_map) {
         //var column_name = d3.select('input[name="radiob"]:checked').node().value;
         var column_name = "country_code";
 
+        var total_type = d3.select('input[name="radiob"]:checked').node().value;
+        if(total_type=="0"){
+           current_key = "Total Plants";
+        }
+        if(total_type=="1"){
+            current_key = "Capacity (MW)"
+        }
+        if (total_type=="2"){
+            current_key = "Generation (GWH)"
+        }
+
         //Calculates totals for each country, can add actual generation/capacity instead of 1
         dataset.forEach(function(element) {
             var bin_name = element[column_name];
             if(all_countries[bin_name]){
-                all_countries[bin_name] = all_countries[bin_name]+1;
-                //all_countries[bin_name] = all_countries[bin_name]+parseInt(element["capacity"]);
-                //all_countries[bin_name] = all_countries[bin_name]+parseInt(element["generation"]);
+                if(total_type=="0"){
+                    all_countries[bin_name] = all_countries[bin_name]+1;
+                }
+                if(total_type=="1"){
+                    all_countries[bin_name] = all_countries[bin_name]+parseInt(element["capacity"]);
+                }
+                if (total_type=="2"){
+                    all_countries[bin_name] = all_countries[bin_name]+parseInt(element["generation"]);
+                }
             }else{
                 all_countries[bin_name] = 1;
             };   
         });
 
         //Convert to per capita here if needed
-        var isPerCapita = d3.select('input[name="radiob"]:checked').node().value;
-        console.log(isPerCapita);
-
         // if (isPerCapita == 'true'){
         //     for(var k in all_countries){
         //         all_countries[k] = all_countries[k] / getCountryData(k);
@@ -183,7 +197,7 @@ var msg = "<h4>" + data.properties.name + "</h4>";
 if (data.visVal) { 
     var population = numberWithCommas(getCountryData(data.properties.iso_a3)['population']);
     var flag = "<img src=\""+getCountryData(data.properties.iso_a3)['flag']+"\" width=\"100%\"></img>";
-    msg += "<br/>"+ current_key + ": "+ data.visVal + "<br/>" + "Population: "+ population + flag; 
+    msg += "<br/>"+ current_key + ": "+ numberWithCommas(data.visVal) + "<br/>" + "Population: "+ population + flag; 
 }
 else{
     var population = numberWithCommas(getCountryData(data.properties.iso_a3)['population']);
