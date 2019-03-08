@@ -1,5 +1,5 @@
 var width = 1280;
-var height = 720;
+var height = 750;
 
 var current_key = "Total";
 
