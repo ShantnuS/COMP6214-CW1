@@ -183,11 +183,11 @@ function main(error, dataset, world_map) {
             .rangeRound([600, 860]);
 
         map.selectAll("g.key").remove();
-        var g = map.append("g")
+        var legend = map.append("g")
             .attr("class", "key")
-            .attr("transform", "translate(0,40)");
+            .attr("transform", "translate(300,700)");
 
-        g.selectAll("rect")
+        legend.selectAll("rect")
             .data(color.range().map(function(d) {
                 d = color.invertExtent(d);
                 if (d[0] == null) d[0] = x.domain()[0];
@@ -195,22 +195,22 @@ function main(error, dataset, world_map) {
                 return d;
             }))
             .enter().append("rect")
-            .attr("height", 8)
+            .attr("height", 15)
             .attr("x", function(d) { return x(d[0]); })
             .attr("width", function(d) { return x(d[1]) - x(d[0]); })
             .attr("fill", function(d) { return color(d[0]); });
 
-        g.append("text")
+        legend.append("text")
             .attr("class", "caption")
             .attr("x", x.range()[0])
             .attr("y", -6)
-            .attr("fill", "#000")
+            .attr("fill", "#fff")
             .attr("text-anchor", "start")
             .attr("font-weight", "bold")
-            .text(column_name);
+            .text(current_key);
 
-        g.call(d3.axisBottom(x)
-            .tickSize(13)
+        legend.call(d3.axisBottom(x)
+            .tickSize(20)
             .tickFormat(function(x, i) { return x; })
             .tickValues(color.domain()))
             .select(".domain")
