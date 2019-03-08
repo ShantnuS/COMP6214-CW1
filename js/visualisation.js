@@ -5,21 +5,16 @@ var current_key = "Total";
 
 var renewables = ["Biomass", "Geothermal", "Hydro", "Nuclear", "Solar", "Wave and Tidal", "Wind"]
 
-//create a svg with the width and height variables 
+//Create the map
 var map = d3.select("div#map").append("svg")
 .attr("width", width)
 .attr("height", height);
-
-//add scale for the map
 var scale = 7*(width-1)/2/Math.PI;
 var scale = 200
-
-//set a projection so that 3D coordinates can be placed on a 2D map
 var projection = d3.geoMercator().translate([600,500]).scale(scale);
-
-//create a path to add the features in the map file to
 var path = d3.geoPath().projection(projection);
 
+//Ready the dataset into a Jsonic format
 function restructure_dataset(data, i) {
     return {
         id: i,
@@ -35,11 +30,11 @@ function restructure_dataset(data, i) {
         generation: data["estimated_generation_gwh"]
     };
 }     
-
 d3.queue().defer(d3.csv, "fixed_dataset.csv", restructure_dataset) 
         .defer(d3.json, "custom.geo.json")
-        .await(analyze);
+        .await(main);
 
+//Get Additional data for a country        
 function getCountryData(country_code){
     var url = "https://restcountries.eu/rest/v2/alpha/"+country_code
     var xmlHttp = new XMLHttpRequest();
@@ -48,7 +43,8 @@ function getCountryData(country_code){
     return JSON.parse(xmlHttp.responseText);
 }
 
-function analyze(error, dataset, world_map) {
+//Main function
+function main(error, dataset, world_map) {
     if (error){
         console.log(error);
         return;
