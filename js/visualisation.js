@@ -3,6 +3,8 @@ var height = 750;
 
 var current_key = "Total";
 
+var renewables = ["Biomass", "Geothermal", "Hydro", "Nuclear", "Solar", "Wave and Tidal", "Wind"]
+
 //create a svg with the width and height variables 
 var map = d3.select("div#map").append("svg")
 .attr("width", width)
@@ -64,15 +66,14 @@ function analyze(error, dataset, world_map) {
 
     updateChoroplethColours();
     d3.select("#radio_button form").on("change", updateChoroplethColours);
+    d3.select("#drop_down_select").on("change", updateChoroplethColours);
 
     function normalise_value(val, max, min) { return (val - min) / (max - min); }
 
 
     function updateChoroplethColours() {
-        
         all_countries = [];
 
-        //var column_name = d3.select('input[name="radiob"]:checked').node().value;
         var column_name = "country_code";
 
         var total_type = d3.select('input[name="radiob"]:checked').node().value;
@@ -86,23 +87,71 @@ function analyze(error, dataset, world_map) {
             current_key = "Generation (GWH)"
         }
 
-        //Calculates totals for each country, can add actual generation/capacity instead of 1
-        dataset.forEach(function(element) {
-            var bin_name = element[column_name];
-            if(all_countries[bin_name]){
-                if(total_type=="0"){
-                    all_countries[bin_name] = all_countries[bin_name]+1;
-                }
-                if(total_type=="1"){
-                    all_countries[bin_name] = all_countries[bin_name]+parseInt(element["capacity"]);
-                }
-                if (total_type=="2"){
-                    all_countries[bin_name] = all_countries[bin_name]+parseInt(element["generation"]);
-                }
-            }else{
-                all_countries[bin_name] = 1;
-            };   
-        });
+        var fuel_filter =  d3.select('select[name="drop_down"]').node().value;
+
+        //Calculates totals for each country
+
+        //All Fuel Types
+        if(fuel_filter =="0"){
+            dataset.forEach(function(element) {
+                var bin_name = element[column_name];
+                if(all_countries[bin_name]){
+                    if(total_type=="0"){
+                        all_countries[bin_name] = all_countries[bin_name]+1;
+                    }
+                    if(total_type=="1"){
+                        all_countries[bin_name] = all_countries[bin_name]+parseInt(element["capacity"]);
+                    }
+                    if (total_type=="2"){
+                        all_countries[bin_name] = all_countries[bin_name]+parseInt(element["generation"]);
+                    }
+                }else{
+                    all_countries[bin_name] = 1;
+                };   
+            });
+        }
+        //Renewables only
+        if(fuel_filter=="1"){
+            dataset.forEach(function(element) {
+                var bin_name = element[column_name];
+                if(renewables.includes(element["fuel_type"])){
+                    if(all_countries[bin_name]){
+                        if(total_type=="0"){
+                            all_countries[bin_name] = all_countries[bin_name]+1;
+                        }
+                        if(total_type=="1"){
+                            all_countries[bin_name] = all_countries[bin_name]+parseInt(element["capacity"]);
+                        }
+                        if (total_type=="2"){
+                            all_countries[bin_name] = all_countries[bin_name]+parseInt(element["generation"]);
+                        }
+                    }else{
+                        all_countries[bin_name] = 1;
+                    }; 
+                }  
+            });
+        }
+        //Non-Renewables only
+        if(fuel_filter=="2"){
+            dataset.forEach(function(element) {
+                var bin_name = element[column_name];
+                if(!renewables.includes(element["fuel_type"])){
+                    if(all_countries[bin_name]){
+                        if(total_type=="0"){
+                            all_countries[bin_name] = all_countries[bin_name]+1;
+                        }
+                        if(total_type=="1"){
+                            all_countries[bin_name] = all_countries[bin_name]+parseInt(element["capacity"]);
+                        }
+                        if (total_type=="2"){
+                            all_countries[bin_name] = all_countries[bin_name]+parseInt(element["generation"]);
+                        }
+                    }else{
+                        all_countries[bin_name] = 1;
+                    }; 
+                }  
+            });
+        }
 
         //Convert to per capita here if needed
         // if (isPerCapita == 'true'){

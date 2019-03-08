@@ -82,15 +82,19 @@
         <br />
 
         <!-- Visualisation!! -->
-
-        </style>
         <div id="radio_button" class="radio">
             <form>
               <input type="radio" name="radiob" checked value="0">Total Plants
-              <input type="radio" name="radiob" checked value="1">Capacity (MW)
-              <input type="radio" name="radiob" checked value="2">Generation (GWH)
+              <input type="radio" name="radiob" checked value="1">Capacity (MW)*
+              <input type="radio" name="radiob" checked value="2">Generation (GWH)*
             </form>
         </div>
+
+        <select name="drop_down" id="drop_down_select">
+            <option value="0">All Fuel Types</option>
+            <option value="1">Renewables</option>
+            <option value="2">Non-Renewables</option>
+        </select> 
 
         <div id="map" style="width: 1227px; height: 430px;"></div>
         <div id="map_tooltip" class="tooltip" ></div>
@@ -101,11 +105,20 @@
         <!-- End of Visualisation!! -->
     </div>
 
-    <div id="inner_remaining" align="center">
+    <div align="center">
         <br />
         <br />
         <br />
-        <h4>Notes</h4>
+        <br />
+        <br />
+        <br />
+        <h3>Notes</h3>
+        <p>Country population and flag data from: <a href="https://restcountries.eu/">https://restcountries.eu/</a></p>
+        <p>D3 Custom Geo JSON file from: <a href="http://edshare.soton.ac.uk/19800/">D3 Lecture Notes</a></p>
+        <p>Dataset is a cleaned version <a href="http://edshare.soton.ac.uk/19750/"> of this file</a>.</p>
+        <br/>
+        <p><i>*Some plants do not have data for these fields, hence the result may not be fully represntative of reality.</i></p>
+        <p> ["Biomass", "Geothermal", "Hydro", "Nuclear", "Solar", "Wave and Tidal", "Wind"]</p>
     </div>
 
 
