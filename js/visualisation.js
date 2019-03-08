@@ -49,10 +49,10 @@ function getCountryData(country_code){
 }
 
 function analyze(error, dataset, world_map) {
-        if (error){
-            console.log(error);
-            return;
-        }
+    if (error){
+        console.log(error);
+        return;
+    }
 
     map.selectAll("path")
         .data(world_map.features)
@@ -64,14 +64,15 @@ function analyze(error, dataset, world_map) {
         updateSelected(this, d);
     });
 
-    updateChoroplethColours();
-    d3.select("#radio_button form").on("change", updateChoroplethColours);
-    d3.select("#drop_down_select").on("change", updateChoroplethColours);
+    updateMap();
+    d3.select("#radio_button form").on("change", updateMap);
+    d3.select("#drop_down_select").on("change", updateMap);
 
+    //Not used in final
     function normalise_value(val, max, min) { return (val - min) / (max - min); }
 
 
-    function updateChoroplethColours() {
+    function updateMap() {
         all_countries = [];
 
         var column_name = "country_code";
@@ -90,7 +91,6 @@ function analyze(error, dataset, world_map) {
         var fuel_filter =  d3.select('select[name="drop_down"]').node().value;
 
         //Calculates totals for each country
-
         //All Fuel Types
         if(fuel_filter =="0"){
             dataset.forEach(function(element) {
@@ -227,36 +227,31 @@ function numberWithCommas(x) {
 }
 
 function updateSelected(el, data){
-// we've clicked on the currently active country
-// deactivate it and hide the tooltip
-if(d3.select(el).classed("active")){
-    d3.select(el).classed("active", false);
-    d3.select("#map_tooltip").classed("active",false);
-    return;
-}
+    if(d3.select(el).classed("active")){
+        d3.select(el).classed("active", false);
+        d3.select("#map_tooltip").classed("active",false);
+        return;
+    }
 
-// make sure no country is active
-map.selectAll("path.active").classed("active", false);
+    map.selectAll("path.active").classed("active", false);
+    d3.select(el).classed("active", true);
 
-// make the country that was clicked on active
-d3.select(el).classed("active", true);
+    //Pop-up Tooltip text
+    var msg = "<h4>" + data.properties.name + "</h4>";
+    if (data.visVal) { 
+        var population = numberWithCommas(getCountryData(data.properties.iso_a3)['population']);
+        var flag = "<img src=\""+getCountryData(data.properties.iso_a3)['flag']+"\" width=\"100%\"></img>";
+        msg += "<br/>"+ current_key + ": "+ numberWithCommas(data.visVal) + "<br/>" + "Population: "+ population + flag; 
+    }
+    else{
+        var population = numberWithCommas(getCountryData(data.properties.iso_a3)['population']);
+        var flag = "<img src=\""+getCountryData(data.properties.iso_a3)['flag']+"\" width=\"100%\"></img>";
+        msg += "<br/>"+"<i>No Data</i>" + "<br/>" + "Population: "+ population + flag; 
+    }
 
-// write tooltip message and move it into position
-var msg = "<h4>" + data.properties.name + "</h4>";
-if (data.visVal) { 
-    var population = numberWithCommas(getCountryData(data.properties.iso_a3)['population']);
-    var flag = "<img src=\""+getCountryData(data.properties.iso_a3)['flag']+"\" width=\"100%\"></img>";
-    msg += "<br/>"+ current_key + ": "+ numberWithCommas(data.visVal) + "<br/>" + "Population: "+ population + flag; 
-}
-else{
-    var population = numberWithCommas(getCountryData(data.properties.iso_a3)['population']);
-    var flag = "<img src=\""+getCountryData(data.properties.iso_a3)['flag']+"\" width=\"100%\"></img>";
-    msg += "<br/>"+"<i>No Data</i>" + "<br/>" + "Population: "+ population + flag; 
-}
-d3.select("#map_tooltip").html(msg)
-    .style("left", (d3.event.pageX) + "px")
-    .style("top", (d3.event.pageY) + "px"); 
+    d3.select("#map_tooltip").html(msg)
+        .style("left", (d3.event.pageX) + "px")
+        .style("top", (d3.event.pageY) + "px"); 
 
-// make sure tooltip is visible
-d3.select("#map_tooltip").classed("active",true);
+    d3.select("#map_tooltip").classed("active",true);
 }
