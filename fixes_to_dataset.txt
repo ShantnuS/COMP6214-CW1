@@ -13,6 +13,12 @@ csvlint.io
 Open Refine:
 	1. Spelling errors for multiple countries along with inconsistencies
 		1.1. For example United kingdom is spelt incorrectly and also called UK. Some rows have blank country names, but have country codes. 
+	2. Estimated generation had a lot of inconsistenies, i.e. (gwh) before number or Nil.
+		2.1. Fixed by converting them all to numbers
+		2.2. Used other biomass plants data to make educated guess about a value that was too large.
+	3. Researching missing data:
+		3.1 Lujan De Cuyo Coal (ARG) and Berrimah Gas (AUS)
+
 
 STUFF I MIGHT FIND:
 	1. Different names for same entry (i.e. UK and GB)
