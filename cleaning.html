@@ -69,9 +69,9 @@
 
             <b>Additional errors I found were:</b>
             <ol>
-                <li><a href="#Vandalism"></a>Vandalism</li>
-                <li><a href="#Out_of_date_information"></a>Out of date information</li>
-                <li><a href="#Incorrect_formatting"></a>Bad range</li>
+                <li><a href="#Vandalism">Vandalism</a></li>
+                <li><a href="#Out_of_date_information">Out of date information</a></li>
+                <li><a href="#Bad_range">Bad range</a></li>
             </ol>
 
             <i>To save time, I only cleaned columns I needed for my visualisation.</i>
@@ -95,7 +95,7 @@
             <p>This issue could be easily fixed using Excel by selecting all data then "Data" > "Filter". Then selecting the first column and filter only blank items. Delete all the items here which are completely empty.</p>
             
             <hr />
-            <h4>Inconsistent rows</h4>
+            <h4><a id="Inconsistent_rows">Inconsistent rows</a></h4>
             <img src="images/screenshots/error3.png" width="100%">
             <p>Some rows did not follow of the overall structure of the CSV file. For example, the image above shows an example where there is a row called "ALL IRAQ" which acts as a total of of the values for Iraq. The only other country with this was India.</p>
             <p>I deleted both of these rows.</p>
@@ -106,7 +106,7 @@
             <p><a href="http://openrefine.org/">Open Refine</a> is an open-source software developed by Google. It allows for easy parsing of data in various formats (such as CSV) and provides a range of tools to make it easy to find and correct errors.</p>
             
             <hr />
-            <h4>Spelling errors</h4>
+            <h4><a id="Spelling_errors">Spelling errors</a></h4>
             <img src="images/screenshots/error4.png" width="100%">
             <p>After loading the CSV file into Open Refine, we can click on the arrow next to a column header and select "Facet" > "Text Facet". 
                 This gives us a list of all unique values in that column - making it easy to spot errors. Using this we can edit incorrect values
@@ -116,7 +116,7 @@
             <img src="images/screenshots/error4_1.png" width="100%">
 
             <hr />
-            <h4>Incorrect formatting</h4>
+            <h4><a id="Incorrect_formatting">Incorrect formatting</a></h4>
             <img src="images/screenshots/error5.png" width="100%">
             <p>There were two main types of errors within this category. The first is shown above where the column values, which should be numerical, has a "(gwh)" appended on it.</p>
             <p> To fix this, I converted the column to numerical values, which can be done using a transformation, and then fixed the ones which couldn't be converted. There was an option to apply the
@@ -130,21 +130,25 @@
             <p>There were a number of minor errors which were also fixed using Open Refine.</p>
 
             <hr/>
-            <h4>Vandalism</h4>
+            <h4><a id="Vandalism">Vandalism</a></h4>
             <img src="images/screenshots/errora1.png" width="100%">
             <p>This is similar to spelling errors, but could be deemed deliberate. The only example of vandalism I found was an entry called "netflix and chile" in a data entry for Chile's country name.</p>
             <p> This was fixed using Open Refine in the same way as a spelling error.</p>
 
             <hr/>
-            <h4>Out of date information</h4>
+            <h4><a id="Out_of_date_information">Out of date information</a></h4>
             <p>
+                Some countries in the dataset no longer exist. Although this isn't a huge problem as they will be ignored when rendering the map visualisation, 
+                it would be better if they are integrated with existing countries. 
+            </p>
+            <p>Therefore, for countries such as Rhodesia and USSR, I decided to merge them with their modern counterparts - 
+                Zimbabwe and Russia, in this case. 
             </p>
 
             <hr/>
-            <h4>Bad range</h4>
-            <p>
-
-            </p>
+            <h4><a id="Bad_range">Bad range</a></h4>
+            <p>This error was found after creating the visualisation. Some values, i.e. for generation, were unrealistically large. For example, a value for Uruguay for a biomass powerplant. </p>
+            <p>Errors such as these were fixed by looking at other similar data and making an educated guess. The value for the Uruguay plant started with 4 and other biomass plants from Uruguay had a generation value of 40,000-50,000. Hence, the value was adjusted to this range.</p>
 
         </div>
         
