@@ -19,12 +19,12 @@
     
 </head>
 
-<body style="background: darkslategray">
+<body style="background: white">
     <!-- Navigation -->
-    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation" style="background:darkslategray">
         <div class="container">
             <!-- Logo and responsive toggle -->
-            <div class="navbar-header">
+            <div class="navbar-header" >
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -41,11 +41,9 @@
     </nav>
 
     <br />
-    <br />
-    <br />
 
     <!-- Content 3 -->
-    <section class="content content-3">
+    <section class="content content-3" style="background:darkslategray">
         <div class="container">
             <h1 class="section-header" style="color:white"><span class="glyphicon glyphicon-flash text-primary"></span><br> Data Cleaning</h1>   
             <p class="lead text-muted" style="color:gray">How the data was cleaned.</p>          
@@ -53,10 +51,103 @@
         </div>
     </section>
 
-    <div id="inner_remaining" align="center">
-        <br />
-        <h3>Approach</h3>
-        <p> add Text here</p>
+    <div id="inner_remaining" align="center" >
+        <br/>
+        <h4>Download the cleaned dataset <a href="fixed_dataset.csv">here!</a></h4>
+        <br/>
+        <div style="width: 50%;" align="left">
+
+            <h3> Errors Found </h3>
+            <b>The main categories of errors I found were: </b>
+            <ol>
+                <li><a href="#Columns_Shifting">Columns shifting</a></li>
+                <li><a href="#Blank_Rows">Blank rows</a></li>
+                <li><a href="#Inconsistent_rows">Inconsistent rows</a></li>
+                <li><a href="#Spelling_errors">Spelling errors</a></li>
+                <li><a href="#Incorrect_formatting">Incorrect formatting</a></li>
+            </ol>
+
+            <b>Additional errors I found were:</b>
+            <ol>
+                <li><a href="#Vandalism"></a>Vandalism</li>
+                <li><a href="#Out_of_date_information"></a>Out of date information</li>
+                <li><a href="#Incorrect_formatting"></a>Bad range</li>
+            </ol>
+
+            <i>To save time, I only cleaned columns I needed for my visualisation.</i>
+
+            <hr />
+
+            <h3>Manual Cleaning</h3>
+            <p> A number of errors could be found manually or using simple tools and fixed using Excel.</p>
+            <hr />
+
+            <h4><a id="Columns_Shifting">Columns shifting</a></h4>
+            <img src="images/screenshots/error1.png" width="100%">
+            <p>For this type of error, I could manually scroll through the CSV file after opening it in Excel and shift the columns back by one. This was possible because large sections were affected at a time, making the error easy to find.</p>
+            <p>Countries which were affected by this issue were: Australia, Chile, Equador, India, Italy and United Kingdom.</p>
+
+            <hr />
+            <h4><a id="Blank_Rows">Blank rows</a></h4>
+            <img src="images/screenshots/error2.png" width="100%">
+            <p>This type of error was found using a tool called <a href="https://csvlint.io/">CSVLint</a>. This website parses a CSV file and shows the locations of the blank lines. 
+                There were lots of empty rows found, e.g. 479, 536, 591, 692, etc.</p>
+            <p>This issue could be easily fixed using Excel by selecting all data then "Data" > "Filter". Then selecting the first column and filter only blank items. Delete all the items here which are completely empty.</p>
+            
+            <hr />
+            <h4>Inconsistent rows</h4>
+            <img src="images/screenshots/error3.png" width="100%">
+            <p>Some rows did not follow of the overall structure of the CSV file. For example, the image above shows an example where there is a row called "ALL IRAQ" which acts as a total of of the values for Iraq. The only other country with this was India.</p>
+            <p>I deleted both of these rows.</p>
+
+            <hr />
+
+            <h3>Open Refine</h3>
+            <p><a href="http://openrefine.org/">Open Refine</a> is an open-source software developed by Google. It allows for easy parsing of data in various formats (such as CSV) and provides a range of tools to make it easy to find and correct errors.</p>
+            
+            <hr />
+            <h4>Spelling errors</h4>
+            <img src="images/screenshots/error4.png" width="100%">
+            <p>After loading the CSV file into Open Refine, we can click on the arrow next to a column header and select "Facet" > "Text Facet". 
+                This gives us a list of all unique values in that column - making it easy to spot errors. Using this we can edit incorrect values
+                such as "United Kingdon", which edits all related rows and combines them with the correct version.
+            </p>
+            <p>To make this process even faster, you can use the cluster tool to automatically find similar looking terms and merge them together. This is shown below:</p>
+            <img src="images/screenshots/error4_1.png" width="100%">
+
+            <hr />
+            <h4>Incorrect formatting</h4>
+            <img src="images/screenshots/error5.png" width="100%">
+            <p>There were two main types of errors within this category. The first is shown above where the column values, which should be numerical, has a "(gwh)" appended on it.</p>
+            <p> To fix this, I converted the column to numerical values, which can be done using a transformation, and then fixed the ones which couldn't be converted. There was an option to apply the
+                fixes to all similar rows which made this easy. Any 'Nil' values were converted to 0.
+            </p>
+            <p>The second type of error in this category was missing data. Although there were a lot of blank values across the dataset which are hard to fix, there were some cases where some research could be done to find the missing values.</p>
+            <p> For example, there were incorrect values of 'Capacity' data for <b>Lujan De Cuyo Coal (ARG)</b> and <b>Berrimah Gas (AUS)</b> power plants. Searching the names of these plants on Google led me to websites with capacity information, hence these could be filled in. </p>
+        
+            <hr />
+            <h3>Additional Errors</h3>
+            <p>There were a number of minor errors which were also fixed using Open Refine.</p>
+
+            <hr/>
+            <h4>Vandalism</h4>
+            <img src="images/screenshots/errora1.png" width="100%">
+            <p>This is similar to spelling errors, but could be deemed deliberate. The only example of vandalism I found was an entry called "netflix and chile" in a data entry for Chile's country name.</p>
+            <p> This was fixed using Open Refine in the same way as a spelling error.</p>
+
+            <hr/>
+            <h4>Out of date information</h4>
+            <p>
+            </p>
+
+            <hr/>
+            <h4>Bad range</h4>
+            <p>
+
+            </p>
+
+        </div>
+        
     </div>
 
 </body>
