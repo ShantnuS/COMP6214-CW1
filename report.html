@@ -57,23 +57,36 @@
             <br />
 
             <h3>Overview</h3>
-            <p> add Text here</p>
+            <p> The visualisation consists of a map which shows power production data for various countries. This is the ideal visualisation type for the data provided as it allows the user to quickly compare the production statistics for different countries. The colour scheme follows the overall design of the website, with oranges and dark turquoise colours being used, and the input elements are simple – making it intuitive to use. </p>
             <hr/>
 
             <h3>Target Audience</h3>
-            <p> add Text here</p>
+            <p> The target audience for this visualisation is a non-technical user who is interested in power production statistics. I believe the visualisation is especially interesting for people who are interested in the topic of climate change as there are options to see renewable and non-renewable statistics. Since the visualisation is accessible to a wide variety of individuals, it can be used to educate people about countries which are more/less sustainable. </p>
+            <p>However, since the dataset used in the visualisation is not complete, a better dataset should be used to support this goal more accurately. </p>
             <hr/>
 
             <h3>Dimensions</h3>
-            <p> add Text here</p>
+            <p> The dimensions included in the visualisation depends on the visualisation being shown. Overall, the columns used are: </p>
+            <ul>
+                <li>Country Code</li>
+                <li>Country Name</li>    
+                <li>Country Total (by calculating the totals of rows)</li>    
+                <li>Capacity</li>   
+                <li>Generation</li>     
+                <li>Fuel type (using fuel type 1</li>    
+            </ul>
             <hr/>
 
-            <h3>Interactivity</h3>
-            <p> add Text here</p>
+            <h3>Interactivity & Enhancements</h3>
+            <p> The visualisation has a number of inputs that give it an interactive element. The radio buttons allow  the user to pick which statistic they would like to see (total, capacity or generation). The drop-down menu allows them to pick the fuel type category (renewable or not). </p>
+            <p>Furthermore, they are able to click on the country on the map to see the actual value, along with some additional information, such as the: name, population and flag for that country. The population and flag data was implemented using external API calls to <a href="https://restcountries.eu/">REST Countries</a>. </p>
+            <p>A legend has been added to make it easier to understand the results.</p>
             <hr/>
 
-            <h3>Enhancements</h3>
-            <p> add Text here</p>
+            <h3>Future Improvements</h3>
+            <p> An extension that was attempted was the ability to see the data in a per capita basis. This would have been useful as it removes the bias against smaller countries. This was implemented using the REST Countries API as well. However, this proved to be very slow as each country needed its own API call, but in the future a separate CSV file could be used to enrich the data. </p>
+            <p>Another improvement could be the ability to see further visualisations for each country. An idea would be that clicking the country shows a bar chart of power production statistics for each fuel type as a separate graph on the bottom of the screen or a new tab.</p>
+            <p><i>To make this visualisation truly useful, a better dataset needs to be used.  </i></p>
             <hr/>
             
         </div>
